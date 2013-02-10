@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+
+		<title>xpressio - Small and Fast RWD front-end framework</title>
+
+		<meta name="description" content="Just a small and fast front-end framework to design your Web Site.">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="font/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheets/xpressio.theme.css">
+	</head>
+	<body>
+		<header class="bck b_jet text color c_white">
+			<div class="row site_width">
+				<div class="col6">
+					<nav>
+						<span class="logo padding_small"><span>xpress</span><span class="text normal">io</span></span>
+					</nav>
+				</div>
+				<div class="col6 text right">
+					<nav>
+						<span class="padding_small"><i class="icon-twitter"></i> Share</span>
+						<span class="padding_small"><i class="icon-cloud-download"></i> Download</span>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="bck b_royalblue_dark text center book color c_white">
+			<div class="padding_big">
+				<div class="row">
+					<div class="col12">
+						<h1 class="margin_bottom_small"><span>xpress</span><span class="text normal">io</span></h1>
+						<h3 class="text thin margin_bottom_small">Just a small and fast tool to design your website.</h3>
+					</div>
+				<div class="row">
+					<div class="col12">
+						<a href="#" class="bck b_jet btn large"><i class="icon-download"></i> Download</a>
+						<a href="#" class="bck b_jet btn large"><i class="icon-github-alt"></i> Download on GitHub</a>
+						<div class="margin_top_small"><i class="icon-cog"></i> Version 0.1</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bck b_sparkle_light text center">
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_small text color c_royalblue">Simple to use and customize</h2>
+				<h3 class="margin_bottom_small text color c_jet">Don't worry about your CSS knowledge, just set your settings, colors and build your xpressio theme in less than 5 minutes.</h3>
+				<div class="row">
+					<div class="col4">
+						<h2 class="icon-dashboard"></h2>
+						<h4 class="margin_top_small">CSS3 Powered</h4>
+						<p>CSS3 it's fun, with powerful features that makes it easy to create a Web Site.</p>
+					</div>
+					<div class="col4">
+						<h2 class="icon-beaker"></h2>
+						<h4 class="margin_top_small">Built with Stylus</h4>
+						<p>Preprocesors are great tools providing scalable and maintainable CSS.</p>
+					</div>
+					<div class="col4">
+						<h2 class="icon-leaf"></h2>
+						<h4 class="margin_top_small">Lightweight</h4>
+						<p>High performance Web Sites are a plus so Xpressio is lightweight. Only 12kb!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_small text center color c_royalblue">Feel free to change settings</h2>
+				<h3 class="margin_bottom_small text center color c_jet">Just edit your xpressio.theme.styl and compile.</h3>
+				<div class="row">
+					<div class="col4">
+						<pre class="bck b_sparkle_light padding_small"><code>// General settings
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700)	
+
+font = Lato
+base_font_size = 16px
+base_font_weight = 300
+heading_font_weight = 300
+heading_line_height = 1.2em
+site_width = 1024px
+
+paragraph_line_height = 1.5em</code></pre>
+					</div>
+					<div class="col4">
+						<pre class="bck b_sparkle_light padding_small"><code>paragraph_bottom = 10px
+paragraph_right_left = 0
+
+margin_top_small = 20px
+margin_top_big = 40px
+
+margin_bottom_small = 20px
+margin_bottom_big = 40px
+
+padding_small = 20px
+padding_big = 40px
+
+border_radius_small = 5px
+border_radius_big = 15px</code></pre>
+					</div>
+					<div class="col4">
+						<pre class="bck b_sparkle_light padding_small"><code>// Grid
+
+column_width = 100px
+gutter_width = 10px
+columns = 12 // max 16
+
+total_width = 100%
+
+// More colors
+
+mySauce1 = #D2B48C
+mySauce2 = #008080
+
+and more...</code></pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bck b_sparkle_light">
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_small text center color c_royalblue">Normalize styles</h2>
+				<h3 class="margin_bottom_small text center color c_jet">Reset and preserves useful defaults styles.</h3>
+				<div class="row">
+					<div class="col4">
+						<h4>address</h4>
+						<address><p>
+							<strong>Home, Inc.</strong><br>
+							345 Joke Ave, Suite 654<br>
+							Sen Seklo, NY 95675<br>
+							<abbr title="Phone">P:</abbr> (123) 456-7890
+							<a href="mailto:#">first.last@example.com</a>
+						</p></address>					
+					</div>
+
+					<div class="col4">
+						<h4>blockquote</h4>
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<p><small>Someone famous <cite title="Source Title">Source Title</cite></small></p>
+						</blockquote>					
+					</div>
+
+					<div class="col4">
+						<h4>description tags</h4>
+						<dl>
+							<dt>Description title</dt>
+							<dd>Description description</dd>
+
+							<dt>Description title</dt>
+							<dd>Description description</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="row margin_bottom_small">
+					<div class="col12">
+						<h4 class="margin_bottom_small">pre, code</h4>
+						<pre class="margin_bottom_small">&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
+&lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn" type="button" value="Input"&gt;
+&lt;input class="btn" type="submit" value="Submit"&gt;</pre>
+<pre><code>def openFile(path):
+    file = open(path, "r")
+    content = file.read()
+    file.close()
+    return content</code></pre>
+					</div>
+				</div>
+			
+				<div class="row margin_bottom_small">
+					<div class="col6">
+						<h4 class="margin_bottom_small">Headings</h4>
+						<h1>H1</h1>
+						<h2>H2</h2>
+						<h3>H3</h3>
+						<h4>H4</h4>
+						<h5>H5</h5>
+						<h6>H6</h6>
+					</div>
+				
+					<div class="col6">
+						<h4 class="margin_bottom_small">Tables</h4>
+						
+						<table class="anchor">
+							<thead>
+								<tr>
+									<th>Table header 1</th>
+										<th>Table header 3</th>
+										<th>Table header 3</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td>Table footer 1</td>
+									<td>Table footer 2</td>
+									<td>Table footer 3</td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td>File 1 - Table body cell 1</td>
+									<td>File 1 - Table body cell 2</td>
+									<td>File 1 - Table body cell 3</td>
+								</tr>
+								<tr>
+									<td>File 2 - Table body cell 1</td>
+									<td>File 2 - Table body cell 2</td>
+									<td>File 2 - Table body cell 3</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_small text center color c_royalblue">Images and border-radius examples</h2>
+				<h3 class="margin_bottom_small text center color c_jet">Awesome responsive images and beatiful border-radius.</h3>
+				<div class="row">
+					<div class="col4">
+						<H5 class="margin_bottom_small text center">border_radius_small</H5>
+						<img src="images/demo.jpg" alt="" class="border_radius_small" />
+					</div>
+					<div class="col4">
+						<H5 class="margin_bottom_small text center">border_radius_circle</H5>
+						<img src="images/demo.jpg" alt="" class="border_radius_circle	" />
+					</div>
+					<div class="col4">
+						<H5 class="margin_bottom_small text center">border_radius_big</H5>
+						<img src="images/demo.jpg" alt="" class="border_radius_big" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bck b_sparkle_light">
+			<div class="site_width padding_big">
+				<h2 class="text center color c_royalblue margin_bottom_small">Inputs & Buttons</h2>
+				<div class="row">
+					<div class="col6">
+						<h4 class="margin_bottom_small">Inputs</h4>
+						<input type="text" placeholder="Text input anchor" class="anchor" />
+						<input type="password" placeholder="Password input anchor" class="anchor" />
+
+						<h4 class="margin_top_small margin_bottom_small">Forms</h4>
+						<form>
+							<fieldset>
+								
+								<label>Label name:</label>
+								<input type="text" placeholder="Type something…" />
+								
+							</fieldset>
+
+							<fieldset>
+								<label>Check me out:</label>
+								<span>First</span>
+								<input type="checkbox">
+								<span>Second</span>
+								<input type="checkbox">
+								<span>Third</span>
+								<input type="checkbox">
+							</fieldset>
+
+							<fieldset>
+								<label>Check me out:</label>
+								<span>Yes</span>
+								<input type="radio" name="radio1">
+								<span>No</span>
+								<input type="radio" name="radio2">
+							</fieldset>
+
+							<fieldset>
+								<button type="submit">Submit</button>
+							</fieldset>
+						</form>
+					</div>
+
+					<div class="col6">
+						<h4 class="margin_bottom_small">Buttons</h4>
+						<a href="#" class="btn">btn</a><br /><br />
+						<a href="#" class="bck b_royalblue_dark btn large text color c_white"><i class="icon-github-alt"></i> btn large</a>
+						<a href="#" class="bck b_sparkle btn medium text color c_white">btn medium text color white</a><br /><br />
+						<a href="#" class="bck b_pink btn normal anchor text color c_white">btn normal anchor text color white</a><br />
+						<a href="#" class="bck b_red btn medium anchor text color c_white">btn medium anchor text color white</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="site_width text center padding_big">
+				<h2 class="text color c_royalblue book margin_bottom_small">Grid system</h2>
+				<h3 class="margin_bottom_small text center color c_jet">Flexible and fluid grid system (customizable to 16 columns max.)</h3>
+				<p><small>Just remember the sum must be equal to your colums variable.</small></p>
+				<p><small>Example: columns = 12 | col4 + col4 + col4 = 12</small></p>
+
+				<div class="row margin_bottom_small">
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+				</div>
+
+				<div class="row margin_bottom_small">
+					<div class="col1 bck b_jet_light padding_small">col1</div>
+					<div class="col11 bck b_jet_light padding_small">col11</div>
+				</div>
+
+				<div class="row margin_bottom_small">
+					<div class="col3 bck b_jet_light padding_small">col3</div>
+					<div class="col3 bck b_jet_light padding_small">col3</div>
+					<div class="col3 bck b_jet_light padding_small">col3</div>
+					<div class="col3 bck b_jet_light padding_small">col3</div>
+				</div>
+
+				<div class="row margin_bottom_small">
+					<div class="col3 bck b_jet_light padding_small">col3</div>
+					<div class="col9 bck b_jet_light padding_small">col9</div>
+				</div>
+
+				<div class="row margin_bottom_small">
+					<div class="col4 bck b_jet_light padding_small">col4</div>
+					<div class="col4 bck b_jet_light padding_small">col4</div>
+					<div class="col4 bck b_jet_light padding_small">col4</div>
+				</div>
+
+				<div class="row margin_bottom_small">
+					<div class="col6 bck b_jet_light padding_small">col6</div>
+					<div class="col6 bck b_jet_light padding_small">col6</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bck b_sparkle_light">
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_small text center color c_royalblue">Font colors & styles</h2>
+				<h3 class="margin_bottom_small text center color c_jet">Default useful typography styles that can be customized.</h3>
+				<div class="row">
+					<div class="col4">
+						<h4>text color</h4>
+						<p>normal</p>
+						<p class="text color c_white">c_white</p>
+						<p class="text color c_jet_light">c_jet_light</p>
+						<p class="text color c_jet">c_jet</p>
+						<p class="text color c_blue">c_blue</p>
+						<p class="text color c_pink">c_pink</p>
+						<p class="text color c_green">c_green</p>
+						<p class="text color c_yellow">c_yellow</p>
+						<p class="text color c_red">c_red</p>
+						<p class="text color c_mysauce1">c_mysauce1</p>
+						<p class="text color c_mysauce2">c_mysauce2</p>
+						<p class="text color c_mysauce3">c_mysauce3</p>
+					</div>
+					<div class="col4">
+						<h4>text align</h4>
+						<p class="text left">left</p>
+						<p class="text center">center</p>
+						<p class="text right">right</p>
+						<p class="text justify">justify</p>
+					</div>
+					<div class="col4">
+						<h4>text style</h4>
+						<p class="text thin">thin</p>
+						<p class="text book">book</p>
+						<p class="text normal">normal</p>
+						<p class="text bold">bold</p>
+						<p class="text italic">italic</p>
+						<p class="text uppercase">uppercase</p>
+						<p class="text underline">underline</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="text center">
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_small text color c_royalblue">Colorful backgrounds</h2>
+				<div class="row">
+					<div class="col3 bck b_blue_light padding_small">
+						<h6>bck b_blue_light</h6>
+					</div>
+					<div class="col3 bck b_turquoise_light padding_small">
+						<h6>bck b_turquoise_light</h6>
+					</div>
+					<div class="col3 bck b_violet_light padding_small">
+						<h6>bck b_violet_light</h6>
+					</div>
+					<div class="col3 bck b_red_light padding_small">
+						<h6>bck b_red_light</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col3 bck b_blue text color c_white padding_small">
+						<h6>bck b_blue</h6>
+					</div>
+					<div class="col3 bck b_turquoise text color c_white padding_small">
+						<h6>bck b_turquoise</h6>
+					</div>
+					<div class="col3 bck b_violet text color c_white padding_small">
+						<h6>bck b_violet</h6>
+					</div>
+					<div class="col3 bck b_red text color c_white padding_small">
+						<h6>bck b_red</h6>
+					</div>
+				</div>
+				<div class="row margin_bottom_small">
+					<div class="col3 bck b_blue_dark text color c_white padding_small">
+						<h6>bck b_blue_dark</h6>
+					</div>
+					<div class="col3 bck b_turquoise_dark text color c_white padding_small">
+						<h6>bck b_turquoise_dark</h6>
+					</div>
+					<div class="col3 bck b_violet_dark text color c_white padding_small">
+						<h6>bck b_violet_dark</h6>
+					</div>
+					<div class="col3 bck b_red_dark text color c_white padding_small">
+						<h6>bck b_red_dark</h6>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col3 bck b_orange_light padding_small">
+						<h6>bck b_orange_light</h6>
+					</div>
+					<div class="col3 bck b_yellow_light padding_small">
+						<h6>bck b_yellow_light</h6>
+					</div>
+					<div class="col3 bck b_asparagus_light padding_small">
+						<h6>bck b_asparagus_light</h6>
+					</div>
+					<div class="col3 bck b_sparkle_light padding_small">
+						<h6>bck b_sparkle_light</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col3 bck b_orange text color c_white padding_small">
+						<h6>bck b_orange</h6>
+					</div>
+					<div class="col3 bck b_yellow text color c_white padding_small">
+						<h6>bck b_yellow</h6>
+					</div>
+					<div class="col3 bck b_asparagus text color c_white padding_small">
+						<h6>bck b_asparagus</h6>
+					</div>
+					<div class="col3 bck b_sparkle text color c_white padding_small">
+						<h6>bck b_sparkle</h6>
+					</div>
+				</div>
+				<div class="row margin_bottom_small">
+					<div class="col3 bck b_orange_dark text color c_white padding_small">
+						<h6>bck b_orange_dark</h6>
+					</div>
+					<div class="col3 bck b_yellow_dark text color c_white padding_small">
+						<h6>bck b_yellow_dark</h6>
+					</div>
+					<div class="col3 bck b_asparagus_dark text color c_white padding_small">
+						<h6>bck b_asparagus_dark</h6>
+					</div>
+					<div class="col3 bck b_sparkle_dark text color c_white padding_small">
+						<h6>bck b_sparkle_dark</h6>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col3 bck b_pink_light padding_small">
+						<h6>bck b_pink_light</h6>
+					</div>
+					<div class="col3 bck b_green_light padding_small">
+						<h6>bck b_green_light</h6>
+					</div>
+					<div class="col3 bck b_eggplant_light padding_small">
+						<h6>bck b_eggplant_light</h6>
+					</div>
+					<div class="col3 bck b_jet_light padding_small">
+						<h6>bck b_jet_light</h6>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col3 bck b_pink text color c_white padding_small">
+						<h6>bck b_pink</h6>
+					</div>
+					<div class="col3 bck b_green text color c_white padding_small">
+						<h6>bck b_green</h6>
+					</div>
+					<div class="col3 bck b_eggplant text color c_white padding_small">
+						<h6>bck b_eggplant</h6>
+					</div>
+					<div class="col3 bck b_jet text color c_white padding_small">
+						<h6>bck b_jet</h6>
+					</div>
+				</div>
+				<div class="row margin_bottom_small">
+					<div class="col3 bck b_pink_dark text color c_white padding_small">
+						<h6>bck b_pink_dark</h6>
+					</div>
+					<div class="col3 bck b_green_dark text color c_white padding_small">
+						<h6>bck b_green_dark</h6>
+					</div>
+					<div class="col3 bck b_eggplant_dark text color c_white padding_small">
+						<h6>bck b_eggplant_dark</h6>
+					</div>
+					<div class="col3 bck b_jet_dark text color c_white padding_small">
+						<h6>bck b_jet_dark</h6>
+					</div>
+				</div>
+				<div class="row margin_bottom_small">
+					<div class="col2 padding_small">
+						<h5>Your own colors light</h5>
+					</div>
+					<div class="col2 bck b_mysauce1_light padding_small">
+						<h6>bck b_mysauce1_light</h6>
+					</div>
+					<div class="col2 bck b_mysauce2_light padding_small">
+						<h6>bck b_mysauce2_light</h6>
+					</div>
+					<div class="col2 bck b_mysauce3_light padding_small">
+						<h6>bck b_mysauce3_light</h6>
+					</div>
+					<div class="col2 bck b_mysauce4_light padding_small">
+						<h6>bck b_mysauce4_light</h6>
+					</div>
+					<div class="col2 bck b_mysauce5_light padding_small">
+						<h6>bck b_mysauce5_light</h6>
+					</div>
+				</div>
+				<div class="row margin_bottom_small">
+					<div class="col2 padding_small">
+						<h5>Your own colors normal</h5>
+					</div>
+					<div class="col2 bck b_mysauce1 text color c_white padding_small">
+						<h6>bck b_mysauce1</h6>
+					</div>
+					<div class="col2 bck b_mysauce2 text color c_white padding_small">
+						<h6>bck b_mysauce2</h6>
+					</div>
+					<div class="col2 bck b_mysauce3 text color c_white padding_small">
+						<h6>bck b_mysauce3</h6>
+					</div>
+					<div class="col2 bck b_mysauce4 text color c_white padding_small">
+						<h6>bck b_mysauce4</h6>
+					</div>
+					<div class="col2 bck b_mysauce5 text color c_white padding_small">
+						<h6>bck b_mysauce5</h6>
+					</div>
+				</div>
+				<div class="row margin_bottom_small">
+					<div class="col2 padding_small">
+						<h5>Your own colors dark</h5>
+					</div>
+					<div class="col2 bck b_mysauce1_dark text color c_white padding_small">
+						<h6>bck b_mysauce1_dark</h6>
+					</div>
+					<div class="col2 bck b_mysauce2_dark text color c_white padding_small">
+						<h6>bck b_mysauce2_dark</h6>
+					</div>
+					<div class="col2 bck b_mysauce3_dark text color c_white padding_small">
+						<h6>bck b_mysauce3_dark</h6>
+					</div>
+					<div class="col2 bck b_mysauce4_dark text color c_white padding_small">
+						<h6>bck b_mysauce4_dark</h6>
+					</div>
+					<div class="col2 bck b_mysauce5_dark text color c_white padding_small">
+						<h6>bck b_mysauce5_dark</h6>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bck b_jet text color c_white center">
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_small">About the author</h2>
+				<h3 class="margin_bottom_small text color c_jet_light">I'm <a href="http://dreyacosta.com" target="_blank">David Rey</a> a technology enthusiast, excited about the new Web development techniques. Actually I live in Madrid (Spain) and my English is limited, so verRy sorrI 4 mAy mistakes.</h3>
+				<img src="images/david.rey.png" alt="David Rey" width="285" height="285" class="border_radius_circle margin_bottom_small" />
+				<h3 class="margin_bottom_small">Follow me on...</h3>
+				<div class="row margin_bottom_small">
+					<div class="col4	"><h4><a href="https://twitter.com/dreyacosta" target="_blank"><i class="icon-twitter-sign"></i> Twitter</a></h4></div>
+					<div class="col4	"><h4><a href="https://github.com/dreyacosta" target="_blank"><i class="icon-github"></i> Github</a></h4></div>
+					<div class="col4	"><h4><a href="https://plus.google.com/101105410053351451441/posts" target="_blank"><i class="icon-google-plus-sign"></i> Google+</a></h4></div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-8068556-5']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</body>
+</html>
