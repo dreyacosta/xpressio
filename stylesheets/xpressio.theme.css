@@ -123,12 +123,24 @@ fieldsetinput[type="text"],fieldset input[type="password"],fieldset input[type="
 .btn.medium{line-height:2em;padding:.6em}
 .btn.normal{line-height:1em;padding:.4em}
 .btn.anchor{display:block;width:100%}
+a{color:none;text-decoration:none}
+a:hover{color:none;text-decoration:none}
+img.big{width:90%}
+img.center{display:block;margin:0 auto}
+img.left{float:left}
+img.medium{width:70%}
+img.right{float:right}
+img.small{width:30%}
 ol{margin:0 0 0 18px}
+li{padding:10px 0}
 ul{list-style:none;}
 ul.square li,ul.circle li{margin:0 0 0 18px}
 ul.square,ul.square ul{list-style:square}
 ul.circle,ul.circle ul{list-style:circle}
 .anchor{width:100%}
+.border{border:1px solid rgba(0,0,0,0.2)}
+.border_bottom{border-bottom:1px solid rgba(0,0,0,0.2)}
+.border_top{border-top:1px solid rgba(0,0,0,0.2)}
 .border_radius_small{-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px}
 .border_radius_big{-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;-o-border-radius:15px;border-radius:15px}
 .border_radius_circle{-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%}
@@ -187,8 +199,8 @@ ul.circle,ul.circle ul{list-style:circle}
 .bck.b_mysauce5_dark{background:#147c72}
 .bck.b_mysauce5_light{background:#ecfcfa}
 .desktop{display:inherit}
-.display_inherit{display:inherit}
-.display_none{display:none}
+.show_display{display:inherit}
+.hide_display{display:none}
 .inline{display:inline}
 .margin_bottom_small{margin-bottom:20px}
 .margin_bottom_big{margin-bottom:40px}
@@ -225,6 +237,7 @@ ul.circle,ul.circle ul{list-style:circle}
 nav{text-align:center}
 .col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12,.col13,.col14,.col15,.col16{display:inline;float:left;width:99.24242424242425%;margin:0 .3787878787878788%;margin-top:10px}
 .desktop{display:none}
+.inline{display:inherit}
 .mobile{display:none}
 .tablet{display:inherit}
 }@media handheld, only screen and (max-width: 480px){.desktop{display:none}

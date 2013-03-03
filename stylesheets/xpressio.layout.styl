@@ -1,5 +1,31 @@
+a
+	color a_color
+	text-decoration a_text_decoration
+
+a:hover
+	color a_hover_color
+	text-decoration a_hover_text_decoration
+
+img
+	&.big
+		width 90%
+	&.center
+		display block
+		margin 0 auto
+	&.left
+		float left
+	&.medium
+		width 70%
+	&.right
+		float right
+	&.small
+		width 30%
+		
 ol
 	margin 0 0 0 18px
+
+li
+	padding li_padding_top_bottom li_padding_right_left
 
 ul
 	list-style none
@@ -12,6 +38,15 @@ ul
 
 .anchor
 	width 100%
+
+.border
+	border border_density border_style rgba(0,0,0,0.2)
+
+.border_bottom
+	border-bottom border_density border_style rgba(0,0,0,0.2)
+
+.border_top
+	border-top border_density border_style rgba(0,0,0,0.2)
 
 .border_radius_small
 	border-radius(border_radius_small)
@@ -135,10 +170,10 @@ ul
 .desktop
 	display inherit
 
-.display_inherit
+.show_display
 	display inherit
 
-.display_none
+.hide_display
 	display none
 
 .inline
@@ -157,10 +192,10 @@ ul
 	margin-top margin_top_big
 
 .margin_small
-	margin 5px
+	margin margin_small
 
 .margin_big
-	margin 20px
+	margin margin_big
 
 .mobile
 	display none
