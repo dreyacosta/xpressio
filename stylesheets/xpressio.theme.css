@@ -233,23 +233,18 @@ ul.circle,ul.circle ul{list-style:circle}
 .col14{display:inline;float:left;width:115.90909090909092%;margin:0 .3787878787878788%}
 .col15{display:inline;float:left;width:124.24242424242425%;margin:0 .3787878787878788%}
 .col16{display:inline;float:left;width:132.57575757575756%;margin:0 .3787878787878788%}
-.flex_container{display:-webkit-flex;display:flex}
-.column{-webkit-flex-flow:column nowrap;flex-flow:column nowrap}
-.flex1{-webkit-flex:1;-moz-flex:1;-ms-flex:1;-o-flex:1;flex:1}
-.flex2{-webkit-flex:2;-moz-flex:2;-ms-flex:2;-o-flex:2;flex:2}
-.flex3{-webkit-flex:3;-moz-flex:3;-ms-flex:3;-o-flex:3;flex:3}
-.flex_align_self_start{-webkit-align-self:flex-start;-moz-align-self:flex-start;-ms-align-self:flex-start;-o-align-self:flex-start;align-self:flex-start}
-.flex_align_self_end{-webkit-align-self:flex-end;-moz-align-self:flex-end;-ms-align-self:flex-end;-o-align-self:flex-end;align-self:flex-end}
-.flex_align_self_center{-webkit-align-self:center;-moz-align-self:center;-ms-align-self:center;-o-align-self:center;align-self:center}
-.flex_align_self_baseline{-webkit-align-self:baseline;-moz-align-self:baseline;-ms-align-self:baseline;-o-align-self:baseline;align-self:baseline}
-.flex_align_content_start{-webkit-align-content:flex-start;-moz-align-content:flex-start;-ms-align-content:flex-start;-o-align-content:flex-start;align-content:flex-start}
-.flex_align_content_end{-webkit-align-content:flex-end;-moz-align-content:flex-end;-ms-align-content:flex-end;-o-align-content:flex-end;align-content:flex-end}
-.flex_align_content_center{-webkit-align-content:center;-moz-align-content:center;-ms-align-content:center;-o-align-content:center;align-content:center}
-.flex_align_items_end{-webkit-align-items:flex-end;-moz-align-items:flex-end;-ms-align-items:flex-end;-o-align-items:flex-end;align-items:flex-end}
-.flex_align_items_center{-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;-o-align-items:center;align-items:center}
-.flex_justify_content_end{-webkit-align-items:flex-end;-moz-align-items:flex-end;-ms-align-items:flex-end;-o-align-items:flex-end;align-items:flex-end}
-.flex_justify_content_center{-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;-o-align-items:center;align-items:center}
-.flex_wrap{-webkit-wrap:wrap;-moz-wrap:wrap;-ms-wrap:wrap;-o-wrap:wrap;wrap:wrap}
+.flex_container{display:-webkit-flex;display:flex;}
+.flex_container.justify_content_start{-webkit-justify-content:flex-start;-moz-justify-content:flex-start;-ms-justify-content:flex-start;-o-justify-content:flex-start;justify-content:flex-start}
+.flex_container.justify_content_center{-webkit-justify-content:center;-moz-justify-content:center;-ms-justify-content:center;-o-justify-content:center;justify-content:center}
+.flex_container.justify_content_end{-webkit-justify-content:flex-end;-moz-justify-content:flex-end;-ms-justify-content:flex-end;-o-justify-content:flex-end;justify-content:flex-end}
+.flex_container.align_items_start{-webkit-align-items:flex-start;-moz-align-items:flex-start;-ms-align-items:flex-start;-o-align-items:flex-start;align-items:flex-start}
+.flex_container.align_items_center{-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;-o-align-items:center;align-items:center}
+.flex_container.align_items_end{-webkit-align-items:flex-end;-moz-align-items:flex-end;-ms-align-items:flex-end;-o-align-items:flex-end;align-items:flex-end}
+.flex_container.align_items_stretch{-webkit-align-items:stretch;-moz-align-items:stretch;-ms-align-items:stretch;-o-align-items:stretch;align-items:stretch}
+.align_self_start{-webkit-align-self:flex-start;-moz-align-self:flex-start;-ms-align-self:flex-start;-o-align-self:flex-start;align-self:flex-start}
+.align_self_center{-webkit-align-self:center;-moz-align-self:center;-ms-align-self:center;-o-align-self:center;align-self:center}
+.align_self_end{-webkit-align-self:flex-end;-moz-align-self:flex-end;-ms-align-self:flex-end;-o-align-self:flex-end;align-self:flex-end}
+.align_self_stretch{-webkit-align-self:stretch;-moz-align-self:stretch;-ms-align-self:stretch;-o-align-self:stretch;align-self:stretch}
 @media handheld, only screen and (max-width: 768px){header.col1,header .col2,header .col3,header .col4,header .col5,header .col6,header .col7,header .col8,header .col9,header .col10,header .col11,header .col12,header .col13,header .col14,header .col15,header .col16{margin-top:0}
 nav{text-align:center}
 .col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12,.col13,.col14,.col15,.col16{display:inline;float:left;width:99.24242424242425%;margin:0 .3787878787878788%;margin-top:10px}
