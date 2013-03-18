@@ -1,0 +1,10 @@
+{
+  "name": "xpressio",
+  "version": "0.2.0",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-stylus"	: "*",
+    "grunt-contrib-uglify"	: "*",
+    "grunt-contrib-copy"	: "*"
+  }
+}
