@@ -6,6 +6,15 @@ Just a small and fast tool to design your website.
 
 + Site: http://xpress.io
 
+## Changelog
+
+### Version 0.2
+
++ More settings to config in xpressio.theme.styl
++ Classes: hide_display, desktop, tablet, mobile
++ Flexbox support
++ New defaults colors
+
 ## Features
 
 + Simple to use and customize.
