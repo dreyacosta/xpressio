@@ -1,6 +1,5 @@
 font
 images
-google*.html
-robots.txt
-*.json
+deploy
+node_modules
 .DS_Store
