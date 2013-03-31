@@ -9,6 +9,10 @@ heading_font_weight = 300
 heading_line_height = 1.2em
 site_width = 1024px
 
+header_line_height = 3em
+
+logo_font_size = 1.8em
+
 paragraph_line_height = 1.5em
 
 paragraph_bottom = 10px
@@ -25,6 +29,12 @@ margin_bottom_big = 40px
 
 padding_small = 15px
 padding_big = 40px
+
+padding_top_small = 15px
+padding_top_big = 40px
+
+padding_bottom_small = 15px
+padding_bottom_big = 40px
 
 border_radius_small = 5px
 border_radius_big = 15px
@@ -45,6 +55,7 @@ shadow_small = 1px 1px 2px
 shadow_medium = 10px 10px 20px
 shadow_big = 30px 30px 40px
 
+
 // Grid
 
 column_width = 100px
@@ -52,6 +63,7 @@ gutter_width = 10px
 columns = 12 // max 16
 
 total_width = 100% // 100% to fluid grid
+
 
 // Colors
 
@@ -85,6 +97,7 @@ mysauce2 = #008080
 mysauce3 = #D8BFD8
 mysauce4 = #FF6347
 mysauce5 = #40E0D0
+
 
 // Color degradation
 
@@ -173,13 +186,13 @@ mysauce3_dark = darken(mysauce3, dark)
 mysauce4_dark = darken(mysauce4, dark)
 mysauce5_dark = darken(mysauce5, dark)
 
-
-
 @import "__vendors.styl"
 @import "xpressio.normalize.styl"
 @import "xpressio.font.styl"
 @import "xpressio.table.styl"
 @import "xpressio.form.styl"
+@import "xpressio.list.styl"
+@import "xpressio.colors.styl"
 @import "xpressio.layout.styl"
 @import "xpressio.grid.styl"
 @import "xpressio.flex.styl"
