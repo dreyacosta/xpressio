@@ -15,20 +15,29 @@ module.exports = function(grunt) {
             }
         },
 
+        imagemin: {                          
+            dist: {                            
+                options: {                       
+                    optimizationLevel: 3
+                },
+                files: {                         
+                    'deploy/images/demo.png': 'images/demo.png'
+                }
+            }
+        },
+
         copy: {
             target: {
-                // options: { cwd: 'path/to/sources' },
-                files: { 'deploy/': ['*.html', 'images/*'] }
+                files: { 'deploy/': ['*.html'] }
             }
         }
     });
 
-    // Load the plugin that provides the "uglify" task.
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     // Default task(s).
-    grunt.registerTask('default', ['stylus', 'copy']);
+    grunt.registerTask('default', ['stylus', 'imagemin', 'copy']);
 
 };
