@@ -15,16 +15,18 @@ row(columns = columns)
 	margin 0 total_width * (((gutter_width * 0.5) / _gridsystemWidth ) * - 1)
 
 column(x, columns = columns)
-	display inline
-	float left
 	width total_width * ((((gutter_width + column_width ) * x) - gutter_width) / _gridsystemWidth)
-	margin 0 total_width * ((gutter_width * 0.5) / _gridsystemWidth)
 
 offset(offset = 1)
 
 .row
 	width 100%
 	clearfix()
+
+[class^="col"]
+	display inline
+	float left
+	margin 0 total_width * ((gutter_width * 0.5) / _gridsystemWidth)
 
 .col1
 	column(1)
