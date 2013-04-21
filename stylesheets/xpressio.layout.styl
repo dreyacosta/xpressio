@@ -25,86 +25,52 @@ img
 .b_shadow_big
 	box-shadow shadow_big rgba(0,0,0,0.5)
 
-.border_small
-	border border_small
+.border
 	border-color rgba(0,0,0,0.2)
-
-.border_medium
-	border border_medium
-	border-color rgba(0,0,0,0.2)
-
-.border_big
-	border border_big
-	border-color rgba(0,0,0,0.2)
-
-.border_top_small
-	border-top border_small
-	border-color rgba(0,0,0,0.2)
-
-.border_top_medium
-	border-top border_medium
-	border-color rgba(0,0,0,0.2)
-
-.border_top_big
-	border-top border_big
-	border-color rgba(0,0,0,0.2)
-
-.border_right_small
-	border-right border_small
-	border-color rgba(0,0,0,0.2)
-
-.border_right_medium
-	border-right border_medium
-	border-color rgba(0,0,0,0.2)
-
-.border_right_big
-	border-right border_big
-	border-color rgba(0,0,0,0.2)
-
-.border_bottom_small
-	border-bottom border_small
-	border-color rgba(0,0,0,0.2)
-
-.border_bottom_medium
-	border-bottom border_medium
-	border-color rgba(0,0,0,0.2)
-
-.border_bottom_big
-	border-bottom border_big
-	border-color rgba(0,0,0,0.2)
-
-.border_left_small
-	border-left border_small
-	border-color rgba(0,0,0,0.2)
-
-.border_left_medium
-	border-left border_medium
-	border-color rgba(0,0,0,0.2)
-
-.border_left_big
-	border-left border_big
-	border-color rgba(0,0,0,0.2)
-
-.dotted
-	border-style dotted
-
-.dashed
-	border-style dashed
-
-.solid
-	border-style solid
-
-.border_radius_small
-	border-radius(border_radius_small)
-
-.border_radius_medium
-	border-radius(border_radius_medium)
-
-.border_radius_big
-	border-radius(border_radius_big)
-
-.border_radius_circle
-	border-radius(50%)
+	&.rad_small
+		border-radius(border_radius_small)
+	&.rad_medium
+		border-radius(border_radius_medium)
+	&.rad_big
+		border-radius(border_radius_big)
+	&.rad_circle
+		border-radius(50%)
+	&.top_small
+		border-top-width border_small
+	&.top_medium
+		border-top-width border_medium
+	&.top_big
+		border-top-width border_big
+	&.right_small
+		border-right-width border_small
+	&.right_medium
+		border-right-width border_medium
+	&.right_big
+		border-right-width border_big
+	&.bottom_small
+		border-bottom-width border_small
+	&.bottom_medium
+		border-bottom-width border_medium
+	&.bottom_big
+		border-bottom-width border_big
+	&.left_small
+		border-left-width border_small
+	&.left_medium
+		border-left-width border_medium
+	&.left_big
+		border-left-width border_big
+	&.all_small
+		border-width border_small
+	&.all_medium
+		border-width border_medium
+	&.all_big
+		border-width border_big
+	&.dotted
+		border-style dotted
+	&.dashed
+		border-style dashed
+	&.solid
+		border-style solid
 
 .desktop
 	display inherit !important
