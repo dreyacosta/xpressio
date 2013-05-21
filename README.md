@@ -10,10 +10,12 @@ Just a small and fast tool to design your website.
 
 ### Version 0.2
 
-+ More settings to config in xpressio.theme.styl
-+ Classes: hide_display, desktop, tablet, mobile
-+ Flexbox support
-+ New defaults colors
++ File structure updated with new files: __variables.styl, xpressio.styl, xpressio.list.styl and xpressio.colors.styl
++ Reordered variables and classes.
++ More settings to config in xpressio.styl
++ New classes: hide_display, show_display, desktop, tablet, mobile, logo, t_shadow_small/medium/big, b_shadow_small/medium/big, ...
++ Flexbox support.
++ New defaults colors.
 
 ## Features
 
