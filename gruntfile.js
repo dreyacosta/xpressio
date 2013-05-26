@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    'deploy/stylesheets/xpressio.theme.css': ['stylesheets/xpressio.theme.styl'] // compile and concat into single file
+                    'stylesheets/xpressio.css': ['stylesheets/xpressio.styl']
                 }
             }
         },
@@ -20,22 +20,38 @@ module.exports = function(grunt) {
                 options: {                       
                     optimizationLevel: 3
                 },
-                files: {                         
-                    'deploy/images/demo.png': 'images/demo.png'
-                }
+                files: [
+                    {expand: true, src: ['images/*'], dest: 'www/'}
+                ]
             }
         },
 
         copy: {
             target: {
-                files: { 'deploy/': ['*.html'] }
+                files: [
+                    {
+                        expand: true,
+                        src: [
+                            '*.html',
+                            '*.ico',
+                            'stylesheets/*.css'
+                        ],
+                        dest: 'www/'
+                    }
+                ]
             }
+        },
+
+        watch: {
+            files: '**/*.styl',
+            tasks: ['stylus']
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
     grunt.registerTask('default', ['stylus', 'imagemin', 'copy']);
