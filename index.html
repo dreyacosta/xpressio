@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="font/font-awesome.min.css">
-		<link rel="stylesheet" href="stylesheets/xpressio.theme.css">
+		<link rel="stylesheet" href="stylesheets/xpressio.css">
 	</head>
 	<body>
 		<header class="bck b_black text color c_white">
@@ -33,14 +33,17 @@
 			<div class="padding_big">
 				<div class="row">
 					<div class="col12">
-						<h1 class="margin_bottom_small"><span>xpress</span><span class="text normal">io</span></h1>
-						<h3 class="text thin margin_bottom_small">Just a small and fast tool to design your website.</h3>
+						<h1 class="margin_bottom_medium"><span>xpress</span><span class="text normal">io</span></h1>
+						<h3 class="text thin margin_bottom_medium">Just a small and fast tool to design your website.</h3>
 					</div>
+				</div>
 				<div class="row">
 					<div class="col12">
-						<div class="margin_top_small"><a href="https://github.com/dreyacosta/xpressio/archive/master.zip" target="_blank" class="bck b_jet_dark btn large"><i class="icon-download"></i> Download</a>
-						<a href="https://github.com/dreyacosta/xpressio" target="_blank" class="bck b_jet_dark btn large"><i class="icon-github-alt"></i> View on Github</a></div>
-						<div class="margin_top_small"><i class="icon-cog"></i> Version 0.1</div>
+						<div class="margin_top_small">
+							<a href="https://github.com/dreyacosta/xpressio/archive/master.zip" target="_blank" class="bck b_jet_dark btn large border rad_small"><i class="icon-download"></i> Download</a>
+							<a href="https://github.com/dreyacosta/xpressio" target="_blank" class="bck b_jet_dark btn large border rad_small"><i class="icon-github-alt"></i> View on Github</a>
+						</div>
+						<div class="margin_top_small"><i class="icon-cog"></i> Version 0.2</div>
 					</div>
 				</div>
 			</div>
@@ -48,8 +51,8 @@
 	
 		<section class="bck b_sparkle_light text center">
 			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small text color c_royalblue">Simple to use and customize</h2>
-				<h3 class="margin_bottom_small text color c_jet">Don't worry about your CSS knowledge, just set your settings, colors and build your xpressio theme in less than 5 minutes.</h3>
+				<h2 class="margin_bottom_medium text color c_royalblue">Simple to use and customize</h2>
+				<h3 class="margin_bottom_medium text color c_jet">Don't worry about your CSS knowledge, just set your settings, colors and build your xpressio theme in less than 5 minutes.</h3>
 				<div class="row">
 					<div class="col4">
 						<h2 class="icon-dashboard"></h2>
@@ -64,7 +67,7 @@
 					<div class="col4">
 						<h2 class="icon-leaf"></h2>
 						<h4 class="margin_top_small">Lightweight</h4>
-						<p>High performance Web Sites are a plus so Xpressio is lightweight. Only 12kb!</p>
+						<p>High performance Web Sites are a plus so Xpressio is lightweight. 20kb max!</p>
 					</div>
 				</div>
 			</div>
@@ -72,38 +75,42 @@
 
 		<section>
 			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small text center color c_royalblue">Feel free to change settings</h2>
-				<h3 class="margin_bottom_small text center color c_jet">Just edit your xpressio.theme.styl and compile.</h3>
+				<h2 class="margin_bottom_medium text center color c_royalblue">Feel free to change settings</h2>
+				<h3 class="margin_bottom_medium text center color c_jet">Just edit your xpressio.theme.styl and compile.</h3>
 				<div class="row">
 					<div class="col4">
-						<pre class="bck b_sparkle_light padding_small"><code>// General settings
+						<pre class="bck b_sparkle_light padding_small"><code>// Font settings
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700)	
+font_base = Lato
+font_base_size = 16px
+font_base_weight = 300
 
-font = Lato
-base_font_size = 16px
-base_font_weight = 300
+font_book_weight = 300
+font_bold_weight = 700
+font_normal_weight = 400
+font_thin_weight = 100
+
+// Headings (h1, h2, h3, ...)
+
 heading_font_weight = 300
 heading_line_height = 1.2em
-site_width = 1024px
-
-paragraph_line_height = 1.5em</code></pre>
+heading_margin = 0 0 0 0</code></pre>
 					</div>
 					<div class="col4">
-						<pre class="bck b_sparkle_light padding_small"><code>paragraph_bottom = 10px
+						<pre class="bck b_sparkle_light padding_small"><code>// Logo, header and site width container
+
+logo_font_size = 1.8em
+header_line_height = 3em
+site_width = 1024px
+
+// Paragraph (p), margins and padding settings
+
+paragraph_line_height = 1.5em
+paragraph_margin = 0 0 10px 0
 paragraph_right_left = 0
 
-margin_top_small = 20px
-margin_top_big = 40px
-
-margin_bottom_small = 20px
-margin_bottom_big = 40px
-
-padding_small = 20px
-padding_big = 40px
-
-border_radius_small = 5px
-border_radius_big = 15px</code></pre>
+margin_small = 5px
+margin_medium = 20px</code></pre>
 					</div>
 					<div class="col4">
 						<pre class="bck b_sparkle_light padding_small"><code>// Grid
@@ -111,13 +118,15 @@ border_radius_big = 15px</code></pre>
 column_width = 100px
 gutter_width = 10px
 columns = 12 // max 16
-
 total_width = 100%
 
 // More colors
 
-mySauce1 = #D2B48C
-mySauce2 = #008080
+mysauce1 = #D2B48C
+
+// Colors degradation
+
+light = 90%
 
 and more...</code></pre>
 					</div>
@@ -127,10 +136,67 @@ and more...</code></pre>
 
 		<section class="bck b_sparkle_light">
 			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small text center color c_royalblue">Normalize styles</h2>
-				<h3 class="margin_bottom_small text center color c_jet">Reset and preserves useful defaults styles.</h3>
+				<h2 class="text center color c_royalblue book margin_bottom_medium">Borders</h2>
+				<h3 class="margin_bottom_medium text center color c_jet">Multiple border classes</h3>
+
+				<div class="row margin_bottom_medium">
+					<div class="col3 bck b_red_medium text center color c_white padding_small border dotted top_medium">border dotted top_medium</div>
+					<div class="col3 bck b_red_medium text center color c_white padding_small border solid right_medium">border solid right_medium</div>
+					<div class="col3 bck b_red_medium text center color c_white padding_small border dashed bottom_medium">border dashed bottom_medium</div>
+					<div class="col3 bck b_red_medium text center color c_white padding_small border solid left_medium">border solid left_medium</div>
+				</div>
+				<div class="row margin_bottom_medium">
+					<div class="col6 bck b_royalblue text center color c_white padding_small border solid all_small">border solid all_small</div>
+					<div class="col6 bck b_royalblue text center color c_white padding_small border solid all_big">border solid all_big</div>
+				</div>
 				<div class="row">
+					<div class="col12 bck b_pink text color center c_white padding_small border solid all_medium">border solid all_medium</div>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_medium text center color c_royalblue">Add to only show on...</h2>
+				<div class="row text center margin_bottom_medium">
 					<div class="col4">
+						<h1 class="icon-desktop"></h1>
+						<h3>.desktop</h3>
+					</div>
+					<div class="col4">
+						<h1 class="icon-tablet"></h1>
+						<h3>.tablet</h3>
+					</div>
+					<div class="col4">
+						<h1 class="icon-mobile-phone"></h1>
+						<h3>.mobile</h3>
+					</div>
+				</div>
+				<div class="desktop row padding_small text center bck b_green_light">
+					<div class="col12">
+						<p><i class="icon-desktop"></i> .desktop</p>
+					</div>
+				</div>
+				<div class="tablet row padding_small text center bck b_green_light">
+					<div class="col12">
+						<p><i class="icon-tablet"></i> .tablet</p>
+					</div>
+				</div>
+				<div class="mobile row padding_small text center bck b_green_light">
+					<div class="col12">
+						<p><i class="icon-mobile-phone"></i> .mobile</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bck b_sparkle_light">
+			<div class="site_width padding_big">
+				<h2 class="margin_bottom_medium text center color c_royalblue">Normalize styles</h2>
+				<h3 class="margin_bottom_medium text center color c_jet">Reset and preserves useful defaults styles.</h3>
+
+				<div class="row margin_bottom_big">
+					<div class="col3">
 						<h4>address</h4>
 						<address><p>
 							<strong>Home, Inc.</strong><br>
@@ -141,7 +207,7 @@ and more...</code></pre>
 						</p></address>					
 					</div>
 
-					<div class="col4">
+					<div class="col3">
 						<h4>blockquote</h4>
 						<blockquote>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -149,7 +215,7 @@ and more...</code></pre>
 						</blockquote>					
 					</div>
 
-					<div class="col4">
+					<div class="col3">
 						<h4>description tags</h4>
 						<dl>
 							<dt>Description title</dt>
@@ -159,11 +225,26 @@ and more...</code></pre>
 							<dd>Description description</dd>
 						</dl>
 					</div>
+
+					<div class="col3">
+						<h4 class="margin_bottom_medium">Headings</h4>
+						<div class="row">
+							<div class="col12">
+								<h1 class="inline">H1</h1>
+								<h2 class="inline">H2</h2>
+								<h3 class="inline">H3</h3>
+								<h4 class="inline">H4</h4>
+								<h5 class="inline">H5</h5>
+								<h6 class="inline">H6</h6>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="row margin_bottom_small">
-					<div class="col12">
-						<h4 class="margin_bottom_small">pre, code</h4>
-						<pre class="margin_bottom_small">&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
+
+				<div class="row margin_bottom_big">
+					<div class="col6">
+						<h4 class="margin_bottom_medium">pre, code</h4>
+						<pre class="margin_bottom_medium">&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
 &lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
 &lt;input class="btn" type="button" value="Input"&gt;
 &lt;input class="btn" type="submit" value="Submit"&gt;</pre>
@@ -173,21 +254,8 @@ and more...</code></pre>
     file.close()
     return content</code></pre>
 					</div>
-				</div>
-			
-				<div class="row margin_bottom_small">
 					<div class="col6">
-						<h4 class="margin_bottom_small">Headings</h4>
-						<h1>H1</h1>
-						<h2>H2</h2>
-						<h3>H3</h3>
-						<h4>H4</h4>
-						<h5>H5</h5>
-						<h6>H6</h6>
-					</div>
-				
-					<div class="col6">
-						<h4 class="margin_bottom_small">Tables</h4>
+						<h4 class="margin_bottom_medium">Tables</h4>
 						
 						<table class="anchor">
 							<thead>
@@ -219,7 +287,8 @@ and more...</code></pre>
 						</table>
 					</div>
 				</div>
-				<div class="row margin_bottom_small">
+
+				<div class="row">
 					<div class="col3">
 						<h4>List style (default)</h4>
 						<ul>
@@ -274,55 +343,20 @@ and more...</code></pre>
 
 		<section>
 			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small text center color c_royalblue">Add to only show on...</h2>
-				<div class="row text center margin_bottom_small">
-					<div class="col4">
-						<h1 class="icon-desktop"></h1>
-						<h3>.desktop</h3>
-					</div>
-					<div class="col4">
-						<h1 class="icon-tablet"></h1>
-						<h3>.tablet</h3>
-					</div>
-					<div class="col4">
-						<h1 class="icon-mobile-phone"></h1>
-						<h3>.mobile</h3>
-					</div>
-				</div>
-				<div class="desktop row padding_small text center bck b_green_light">
-					<div class="col12">
-						<p><i class="icon-desktop"></i> .desktop</p>
-					</div>
-				</div>
-				<div class="tablet row padding_small text center bck b_green_light">
-					<div class="col12">
-						<p><i class="icon-tablet"></i> .tablet</p>
-					</div>
-				</div>
-				<div class="mobile row padding_small text center bck b_green_light">
-					<div class="col12">
-						<p><i class="icon-mobile-phone"></i> .mobile</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small text center color c_royalblue">Images and border-radius examples</h2>
-				<h3 class="margin_bottom_small text center color c_jet">Awesome responsive images and beatiful border-radius.</h3>
+				<h2 class="margin_bottom_medium text center color c_royalblue">Images and border-radius examples</h2>
+				<h3 class="margin_bottom_medium text center color c_jet">Awesome responsive images and beatiful border-radius.</h3>
 				<div class="row">
 					<div class="col4">
-						<H5 class="margin_bottom_small text center">border_radius_small</H5>
-						<img src="images/demo.png" alt="" class="center border_radius_small" />
+						<H5 class="margin_bottom_medium text center">border rad_small</H5>
+						<img src="images/demo.png" alt="" class="center border rad_small" />
 					</div>
 					<div class="col4">
-						<H5 class="margin_bottom_small text center">border_radius_circle</H5>
-						<img src="images/demo.png" alt="" class="center border_radius_circle	" />
+						<H5 class="margin_bottom_medium text center">border rad_circle</H5>
+						<img src="images/demo.png" alt="" class="center border rad_circle" />
 					</div>
 					<div class="col4">
-						<H5 class="margin_bottom_small text center">border_radius_big</H5>
-						<img src="images/demo.png" alt="" class="center border_radius_big" />
+						<H5 class="margin_bottom_medium text center">border rad_big</H5>
+						<img src="images/demo.png" alt="" class="center border rad_big" />
 					</div>
 				</div>
 			</div>
@@ -330,14 +364,14 @@ and more...</code></pre>
 
 		<section class="bck b_sparkle_light">
 			<div class="site_width padding_big">
-				<h2 class="text center color c_royalblue margin_bottom_small">Inputs & Buttons</h2>
+				<h2 class="text center color c_royalblue margin_bottom_medium">Inputs & Buttons</h2>
 				<div class="row">
 					<div class="col6">
-						<h4 class="margin_bottom_small">Inputs</h4>
-						<input type="text" placeholder="Text input anchor" class="anchor" />
-						<input type="password" placeholder="Password input anchor" class="anchor" />
+						<h4 class="margin_bottom_medium">Inputs</h4>
+						<input type="text" placeholder="text input anchor border all_small solid" class="anchor border all_small solid margin_bottom_small" />
+						<input type="password" placeholder="password input anchor border rad_small all_medium solid" class="anchor border rad_small all_medium solid" />
 
-						<h4 class="margin_top_small margin_bottom_small">Forms</h4>
+						<h4 class="margin_top_small margin_bottom_medium">Forms</h4>
 						<form>
 							<fieldset>
 								
@@ -371,12 +405,22 @@ and more...</code></pre>
 					</div>
 
 					<div class="col6">
-						<h4 class="margin_bottom_small">Buttons</h4>
-						<a href="#" class="btn">btn</a><br /><br />
-						<a href="#" class="bck b_royalblue_dark btn large text color c_white"><i class="icon-github-alt"></i> btn large</a>
-						<a href="#" class="bck b_sparkle btn medium text color c_white">btn medium text color white</a><br /><br />
-						<a href="#" class="bck b_pink btn normal anchor text color c_white">btn normal anchor text color white</a><br />
-						<a href="#" class="bck b_red btn medium anchor text color c_white">btn medium anchor text color white</a>
+						<h4 class="margin_bottom_medium">Buttons</h4>
+						<div class="margin_bottom_medium">
+							<a href="#" class="btn">btn</a>
+							<a href="#" class="btn normal">btn normal</a>
+							<a href="#" class="btn medium">btn medium</a>
+							<a href="#" class="btn large">btn large</a>							
+						</div>
+						<div class="margin_bottom_medium">
+							<a href="#" class="btn bck b_red_light">btn</a>
+							<a href="#" class="btn normal border_radius_small bck b_red_medium text color c_white">btn normal</a>
+							<a href="#" class="btn medium bck b_red text color c_white">btn medium</a>
+							<a href="#" class="btn large bck b_red_dark text color c_white">btn large</a>
+						</div>
+						<div>
+							<a href="#" class="btn normal border_radius_big bck b_blue_dark text color c_white anchor border rad_big">btn normal anchor border rad_big</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -384,12 +428,12 @@ and more...</code></pre>
 
 		<section>
 			<div class="site_width text center padding_big">
-				<h2 class="text color c_royalblue book margin_bottom_small">Grid system</h2>
-				<h3 class="margin_bottom_small text center color c_jet">Flexible and fluid grid system (customizable to 16 columns max.)</h3>
+				<h2 class="text color c_royalblue book margin_bottom_medium">Grid system</h2>
+				<h3 class="margin_bottom_medium text center color c_jet">Flexible and fluid grid system (customizable to 16 columns max.)</h3>
 				<p><small>Just remember the sum must be equal to your colums variable.</small></p>
 				<p><small>Example: columns = 12 | col4 + col4 + col4 = 12</small></p>
 
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col1 bck b_jet_light padding_small">col1</div>
 					<div class="col1 bck b_jet_light padding_small">col1</div>
 					<div class="col1 bck b_jet_light padding_small">col1</div>
@@ -404,30 +448,30 @@ and more...</code></pre>
 					<div class="col1 bck b_jet_light padding_small">col1</div>
 				</div>
 
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col1 bck b_jet_light padding_small">col1</div>
 					<div class="col11 bck b_jet_light padding_small">col11</div>
 				</div>
 
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col3 bck b_jet_light padding_small">col3</div>
 					<div class="col3 bck b_jet_light padding_small">col3</div>
 					<div class="col3 bck b_jet_light padding_small">col3</div>
 					<div class="col3 bck b_jet_light padding_small">col3</div>
 				</div>
 
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col3 bck b_jet_light padding_small">col3</div>
 					<div class="col9 bck b_jet_light padding_small">col9</div>
 				</div>
 
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col4 bck b_jet_light padding_small">col4</div>
 					<div class="col4 bck b_jet_light padding_small">col4</div>
 					<div class="col4 bck b_jet_light padding_small">col4</div>
 				</div>
 
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col6 bck b_jet_light padding_small">col6</div>
 					<div class="col6 bck b_jet_light padding_small">col6</div>
 				</div>
@@ -436,59 +480,54 @@ and more...</code></pre>
 
 		<section>
 			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small text center color c_royalblue">Flexbox (.flex)</h2>
-				<h3 class="margin_bottom_small text center color c_jet">Easy play with CSS3 Flexbox awesome feature</h3>
+				<h2 class="margin_bottom_medium text center color c_royalblue">Flexbox (.flex)</h2>
+				<h3 class="margin_bottom_medium text center color c_jet">Easy play with CSS3 Flexbox awesome feature</h3>
 				
 				<h4 class="margin_small">First flex container (.flex)</h4>
 				<div class="flex margin_small">
-					<div class="f1 flex y_center bck b_blue text center color c_white padding_small margin_small border">
+					<div class="f1 flex y_center bck b_blue text center color c_white padding_small margin_small border solid all_big">
 						<span class="text bold">.flex .y_center</span> 
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.
 					</div>
 
 					<div class="f1 flex column">
 						<span class="text center bold">Flexbox inside flexbox (.flex .column)</span>
-						<div class="bck b_pink text center color c_white padding_small margin_small border"><span class="text center bold">div</span><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-						<div class="bck b_yellow text center color c_white padding_small margin_small border"><span class="text center bold">div</span><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-						<div class="bck b_orange text center color c_white padding_small margin_small border"><span class="text center bold">div</span><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+						<div class="bck b_pink text center color c_white padding_small margin_small border solid all_big"><span class="text center bold">div</span><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+						<div class="bck b_yellow text center color c_white padding_small margin_small border solid all_big"><span class="text center bold">div</span><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+						<div class="bck b_orange text center color c_white padding_small margin_small border solid all_big"><span class="text center bold">div</span><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
 					</div>
 
-					<div class="f1 flex y_center bck b_blue text center color c_white padding_small margin_small border"><span class="text bold">.flex .y_center</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
+					<div class="f1 flex y_center bck b_blue text center color c_white padding_small margin_small border solid all_big"><span class="text bold">.flex .y_center</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
 				</div>
 				
 				<h4 class="margin_small">Second flex container (.flex)</h4>
 				<div class="flex margin_small">
-					<div class="f1 bck b_green text center color c_white padding_small margin_small border"><span class="text bold">.f1</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
-					<div class="f1 bck b_red text center color c_white padding_small margin_small border"><span class="text bold">.f1</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
+					<div class="f1 bck b_green text center color c_white padding_small margin_small border solid all_big"><span class="text bold">.f1</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
+					<div class="f1 bck b_red text center color c_white padding_small margin_small border solid all_big"><span class="text bold">.f1</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
 				</div>
 				
 				<h4 class="margin_small">Third flex container (.flex)</h4>
 				<div class="flex margin_small">
-					<div class="flex y_center f4 bck b_turquoise text center color c_white padding_small margin_small border"><span class="text bold">.f4</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
-					<div class="f1 bck b_mysauce4 text center color c_white padding_small margin_small border"><span class="text bold">.f1</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
+					<div class="flex y_center f4 bck b_turquoise text center color c_white padding_small margin_small border solid all_big"><span class="text bold">.f4</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
+					<div class="f1 bck b_mysauce4 text center color c_white padding_small margin_small border solid all_big"><span class="text bold">.f1</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur distinctio odit rerum iure quas nihil neque a facilis quam tempora pariatur reprehenderit architecto cum beatae eaque quisquam rem veniam.</div>
 				</div>
 			</div>
 		</section>
 
 		<section class="bck b_sparkle_light">
 			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small text center color c_royalblue">Font colors & styles</h2>
-				<h3 class="margin_bottom_small text center color c_jet">Default useful typography styles that can be customized.</h3>
+				<h2 class="margin_bottom_medium text center color c_royalblue">Font colors & styles</h2>
+				<h3 class="margin_bottom_medium text center color c_jet">Default useful typography styles that can be customized.</h3>
 				<div class="row">
 					<div class="col4">
 						<h4>text color</h4>
 						<p>normal</p>
 						<p class="text color c_white">c_white</p>
-						<p class="text color c_jet_light">c_jet_light</p>
-						<p class="text color c_jet">c_jet</p>
+						<p class="text color c_black_light">c_black_light</p>
 						<p class="text color c_blue">c_blue</p>
-						<p class="text color c_pink">c_pink</p>
 						<p class="text color c_green">c_green</p>
 						<p class="text color c_yellow">c_yellow</p>
 						<p class="text color c_red">c_red</p>
-						<p class="text color c_mysauce1">c_mysauce1</p>
-						<p class="text color c_mysauce2">c_mysauce2</p>
-						<p class="text color c_mysauce3">c_mysauce3</p>
 					</div>
 					<div class="col4">
 						<h4>text align</h4>
@@ -515,7 +554,7 @@ and more...</code></pre>
 
 		<section class="text center">
 			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small text color c_royalblue">Colorful backgrounds</h2>
+				<h2 class="margin_bottom_medium text color c_royalblue">Colorful backgrounds</h2>
 				<div class="row">
 					<div class="col3 bck b_yellow_light padding_small">
 						<h6>bck b_yellow_light</h6>
@@ -558,7 +597,7 @@ and more...</code></pre>
 						<h6>bck b_red</h6>
 					</div>
 				</div>
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col3 bck b_yellow_dark text color c_white padding_small">
 						<h6>bck b_yellow_dark</h6>
 					</div>
@@ -615,7 +654,7 @@ and more...</code></pre>
 						<h6>bck b_black</h6>
 					</div>
 				</div>
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col3 bck b_blue_dark text color c_white padding_small">
 						<h6>bck b_blue_dark</h6>
 					</div>
@@ -672,7 +711,7 @@ and more...</code></pre>
 						<h6>bck b_jet</h6>
 					</div>
 				</div>
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col3 bck b_asparagus_dark text color c_white padding_small">
 						<h6>bck b_asparagus_dark</h6>
 					</div>
@@ -729,7 +768,7 @@ and more...</code></pre>
 						<h6>bck b_turquoise</h6>
 					</div>
 				</div>
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col3 bck b_salmon_dark text color c_white padding_small">
 						<h6>bck b_salmon_dark</h6>
 					</div>
@@ -745,7 +784,7 @@ and more...</code></pre>
 				</div>
 
 
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col2 padding_small">
 						<h5>Your</h5>
 					</div>
@@ -765,7 +804,7 @@ and more...</code></pre>
 						<h6>bck b_mysauce5_light</h6>
 					</div>
 				</div>
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col2 padding_small">
 						<h5>own</h5>
 					</div>
@@ -785,7 +824,7 @@ and more...</code></pre>
 						<h6>bck b_mysauce5_medium</h6>
 					</div>
 				</div>
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col2 padding_small">
 						<h5>beatiful</h5>
 					</div>
@@ -805,7 +844,7 @@ and more...</code></pre>
 						<h6>bck b_mysauce5</h6>
 					</div>
 				</div>
-				<div class="row margin_bottom_small">
+				<div class="row margin_bottom_medium">
 					<div class="col2 padding_small">
 						<h5>colors</h5>
 					</div>
@@ -830,27 +869,30 @@ and more...</code></pre>
 
 		<footer class="bck b_jet_dark text color c_white center">
 			<div class="site_width padding_big">
-				<h2 class="margin_bottom_small">About the author</h2>
-				<h3 class="margin_bottom_small text color c_jet_light">I'm <a href="http://dreyacosta.com" target="_blank">David Rey</a> a technology enthusiast, excited about the new Web development techniques. Actually I live in Madrid (Spain) and my English is limited, so verRy sorrI 4 mAy mistakes.</h3>
-				<img src="images/david.rey.png" alt="David Rey" width="285" height="285" class="border_radius_circle margin_bottom_small" />
-				<h3 class="margin_bottom_small">Follow me on...</h3>
-				<div class="row margin_bottom_small">
-					<div class="col4	"><h4><a href="https://twitter.com/dreyacosta" target="_blank"><i class="icon-twitter-sign"></i> Twitter</a></h4></div>
-					<div class="col4	"><h4><a href="https://github.com/dreyacosta" target="_blank"><i class="icon-github"></i> Github</a></h4></div>
-					<div class="col4	"><h4><a href="https://plus.google.com/101105410053351451441/posts" target="_blank"><i class="icon-google-plus-sign"></i> Google+</a></h4></div>
+				<h2 class="margin_bottom_medium">About the author</h2>
+				<h3 class="margin_bottom_medium text color c_jet_light">I'm <a href="http://dreyacosta.com" target="_blank">David Rey</a> a technology enthusiast, excited about the new Web development techniques. Actually I live in Madrid (Spain) and my English is limited, so verRy sorrI 4 mAy mistakes.</h3>
+				<img src="http://cdn.xpress.io/photos/dreyacosta.png" alt="David Rey" width="285" height="285" class="border rad_circle margin_bottom_medium" />
+				<h3 class="margin_bottom_medium">Follow me on...</h3>
+				<div class="row margin_bottom_medium">
+					<div class="col4"><h4><a href="https://twitter.com/dreyacosta" target="_blank"><i class="icon-twitter-sign"></i> Twitter</a></h4></div>
+					<div class="col4"><h4><a href="https://github.com/dreyacosta" target="_blank"><i class="icon-github"></i> Github</a></h4></div>
+					<div class="col4"><h4><a href="https://plus.google.com/101105410053351451441/posts" target="_blank"><i class="icon-google-plus-sign"></i> Google+</a></h4></div>
 				</div>
 			</div>
 		</footer>
 		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-8068556-5']);
-			_gaq.push(['_trackPageview']);
 
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-8068556-5']);
+		  _gaq.push(['_setDomainName', 'xpress.io']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
 		</script>
 	</body>
 </html>
