@@ -34,7 +34,8 @@ module.exports = function(grunt) {
                         src: [
                             '*.html',
                             '*.ico',
-                            'stylesheets/*.css'
+                            'stylesheets/*.css',
+                            'font/*'
                         ],
                         dest: 'www/'
                     }
