@@ -12,8 +12,8 @@ Just a small and fast tool to design your website.
 
 + File structure updated with new files: __variables.styl, xpressio.styl, xpressio.list.styl and xpressio.colors.styl
 + Reordered variables and classes.
-+ More settings to config in xpressio.styl
-+ New classes: hide_display, show_display, desktop, tablet, mobile, logo, t_shadow_small/medium/big, b_shadow_small/medium/big, ...
++ More settings to config in xpressio.styl.
++ New classes: hide_display, show_display, desktop, tablet, mobile, logo, t_shadow_small/medium/big, b_shadow_small/medium/big, border, ...
 + Flexbox support.
 + New defaults colors.
 
@@ -24,7 +24,7 @@ Just a small and fast tool to design your website.
 + Inputs & Buttons.
 + Flexible and fluid grid system (customizable to 16 columns max.).
 + Default useful typography styles that can be customized.
-+ Lightweight. Only 12Kb!
++ Lightweight. 20kb max!
 
 ### Feel free to contribute
 
