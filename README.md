@@ -8,6 +8,13 @@ Just a small and fast tool to design your website.
 
 ## Changelog
 
+### Version 0.3
+
++ Flexbox cross-browser solution.
++ New flat buttons design.
++ New defaults colors.
++ Others minor fixes.
+
 ### Version 0.2
 
 + File structure updated with new files: __variables.styl, xpressio.styl, xpressio.list.styl and xpressio.colors.styl
