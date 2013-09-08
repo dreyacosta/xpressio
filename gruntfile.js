@@ -15,9 +15,9 @@ module.exports = function(grunt) {
             }
         },
 
-        imagemin: {                          
-            dist: {                            
-                options: {                       
+        imagemin: {
+            dist: {
+                options: {
                     optimizationLevel: 3
                 },
                 files: [
