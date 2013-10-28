@@ -37,3 +37,6 @@ Just a small and fast tool to design your website.
 
 ## Credits
 Created by [David Rey](http://twitter.com/dreyacosta).
+
+## License
+This software is free to use under the MIT license.
