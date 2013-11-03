@@ -1648,6 +1648,45 @@ img.small {
   -o-box-flex: 12;
   box-flex: 12;
 }
+.tooltip {
+  position: relative;
+}
+.tooltip:hover span {
+  opacity: 0.9;
+}
+.tooltip span {
+  background: #3c4346;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  left: 10%;
+  right: 10%;
+  top: -45px;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.tooltip span:before,
+.tooltip span:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #3c4346;
+}
 @media handheld, only screen and (max-width: 768px) {
   header.col1,
   header .col2,

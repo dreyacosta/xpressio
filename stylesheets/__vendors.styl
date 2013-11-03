@@ -1,92 +1,92 @@
 vendor(prop, args)
-    -webkit-{prop} args
-    -moz-{prop} args
-    -ms-{prop} args
-    -o-{prop} args
-    {prop} args
+  -webkit-{prop} args
+  -moz-{prop} args
+  -ms-{prop} args
+  -o-{prop} args
+  {prop} args
 
 vendorVal(prop, args)
-    {prop} -webkit- + args
-    {prop} -moz- + args
-    {prop} -ms- + args
-    {prop} -o- + args
-    {prop} args
+  {prop} -webkit- + args
+  {prop} -moz- + args
+  {prop} -ms- + args
+  {prop} -o- + args
+  {prop} args
 
 border-radius()
-    vendor('border-radius', arguments)
+  vendor('border-radius', arguments)
 
 box-shadow()
-    vendor('box-shadow', arguments)
+  vendor('box-shadow', arguments)
 
 text-shadow()
-    vendor('text-shadow', arguments)
+  vendor('text-shadow', arguments)
 
 background-image()
-    vendor('background-image', arguments)
+  vendor('background-image', arguments)
 
 transition()
-    vendor('transition', arguments)
+  vendor('transition', arguments)
 
 transform()
-    vendor('transform', arguments)
+  vendor('transform', arguments)
 
 box-sizing()
-    vendor('box-sizing', arguments)
+  vendor('box-sizing', arguments)
 
 text-size-adjust()
-    vendor('text-size-adjust', arguments)
+  vendor('text-size-adjust', arguments)
 
 // Flex vendors (I don't like so much the code, but lot of hacks are required)
 
 flexbox()
-    display -webkit-box
-    display -moz-box
-    display -ms-flexbox
-    display -webkit-flex
-    display flex
+  display -webkit-box
+  display -moz-box
+  display -ms-flexbox
+  display -webkit-flex
+  display flex
 
 flex-direction-row()
-    -webkit-box-direction normal
-    -webkit-box-orient normal
-    -webkit-flex-direction horizontal
-    -moz-box-direction horizontal
-    -moz-flex-direction row
-    -ms-flex-direction row
-    flex-direction row
+  -webkit-box-direction normal
+  -webkit-box-orient normal
+  -webkit-flex-direction horizontal
+  -moz-box-direction horizontal
+  -moz-flex-direction row
+  -ms-flex-direction row
+  flex-direction row
 
 flex-direction-column()
-    -webkit-box-direction normal
-    -moz-box-direction normal
-    -webkit-box-orient vertical
-    -moz-box-orient vertical
-    -webkit-flex-direction column
-    -ms-flex-direction column
-    flex-direction column
+  -webkit-box-direction normal
+  -moz-box-direction normal
+  -webkit-box-orient vertical
+  -moz-box-orient vertical
+  -webkit-flex-direction column
+  -ms-flex-direction column
+  flex-direction column
 
 // X horizontal
 
 flex-justify-content()
-    vendor('justify-content', arguments)
-    vendor('box-pack', arguments)
-    vendor('flex-pack', arguments)
+  vendor('justify-content', arguments)
+  vendor('box-pack', arguments)
+  vendor('flex-pack', arguments)
 
 // Y vertical
 
 flex-align-items()
-    vendor('align-items', arguments)
-    vendor('box-align', arguments)
-    vendor('flex-align', arguments)
+  vendor('align-items', arguments)
+  vendor('box-align', arguments)
+  vendor('flex-align', arguments)
 
 // Items properties
 
 flex-align-self()
-    vendor('align-self', arguments)
-    vendor('flex-item-align', arguments)
+  vendor('align-self', arguments)
+  vendor('flex-item-align', arguments)
 
 flex-anchor()
-    vendor('flex', arguments)
-    vendor('box-flex', arguments)
+  vendor('flex', arguments)
+  vendor('box-flex', arguments)
 
 flex-align-content()
-    vendor('align-content', arguments)
-    vendor('flex-line-pack', arguments)
+  vendor('align-content', arguments)
+  vendor('flex-line-pack', arguments)
