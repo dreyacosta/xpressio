@@ -33,19 +33,19 @@ offset(offset = 1)
   margin auto auto
 
 col()
-    for row in arguments
-        .col{row}
-            column(row)
+  for row in arguments
+    .col{row}
+      column(row)
 
 widths()
   for row in arguments
     .width{row}
-      width row
+      width (row)%
 
 heights()
   for row in arguments
     .height{row}
-      height row
+      height (row)%
 
 number_columns()
   for row in arguments
