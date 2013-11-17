@@ -927,8 +927,20 @@ img.small {
   display: block;
   margin: 0 auto;
 }
+.cursor.crosshair {
+  cursor: crosshair;
+}
+.cursor.help {
+  cursor: help;
+}
+.cursor.move {
+  cursor: move;
+}
 .cursor.pointer {
   cursor: pointer;
+}
+.cursor.progress {
+  cursor: progress;
 }
 .anchor {
   width: 100%;
@@ -1045,11 +1057,44 @@ img.small {
 .show_display {
   display: inherit !important;
 }
+.height10 {
+  height: 10%;
+}
+.height20 {
+  height: 20%;
+}
+.height30 {
+  height: 30%;
+}
+.height40 {
+  height: 40%;
+}
+.height50 {
+  height: 50%;
+}
+.height60 {
+  height: 60%;
+}
+.height70 {
+  height: 70%;
+}
+.height80 {
+  height: 80%;
+}
+.height90 {
+  height: 90%;
+}
+.height100 {
+  height: 100%;
+}
 .hide_display {
   display: none;
 }
 .inline {
   display: inline-block;
+}
+.margin_auto {
+  margin: auto auto;
 }
 .margin_small {
   margin: 5px;
@@ -1195,6 +1240,36 @@ img.small {
   -o-text-shadow: 30px 30px 40px rgba(0,0,0,0.5);
   text-shadow: 30px 30px 40px rgba(0,0,0,0.5);
 }
+.width10 {
+  width: 10%;
+}
+.width20 {
+  width: 20%;
+}
+.width30 {
+  width: 30%;
+}
+.width40 {
+  width: 40%;
+}
+.width50 {
+  width: 50%;
+}
+.width60 {
+  width: 60%;
+}
+.width70 {
+  width: 70%;
+}
+.width80 {
+  width: 80%;
+}
+.width90 {
+  width: 90%;
+}
+.width100 {
+  width: 100%;
+}
 .row {
   width: 100%;
   *zoom: 1;
@@ -1227,9 +1302,6 @@ img.small {
 .col5 {
   width: 40.909090909090914%;
 }
-.col5 {
-  width: 40.909090909090914%;
-}
 .col6 {
   width: 49.24242424242424%;
 }
@@ -1250,18 +1322,6 @@ img.small {
 }
 .col12 {
   width: 99.24242424242425%;
-}
-.col13 {
-  width: 107.57575757575756%;
-}
-.col14 {
-  width: 115.90909090909092%;
-}
-.col15 {
-  width: 124.24242424242425%;
-}
-.col16 {
-  width: 132.57575757575756%;
 }
 .flex {
   display: -ms-flexbox;
@@ -1296,11 +1356,11 @@ img.small {
   -ms-box-orient: horizontal;
   -o-box-orient: horizontal;
   box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  -o-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: 12;
+  -moz-flex-direction: 12;
+  -ms-flex-direction: 12;
+  -o-flex-direction: 12;
+  flex-direction: 12;
 }
 .flex.column {
   -webkit-box-orient: vertical;

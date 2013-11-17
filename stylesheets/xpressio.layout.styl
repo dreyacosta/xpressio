@@ -88,17 +88,29 @@ img
   &.solid
     border-style solid
 
+if columns_numbers
+  for row in columns_numbers
+    .columns{row}
+      vendor('columns', row)
+
 .desktop
   display inherit !important
 
 .show_display
   display inherit !important
 
+for row in heights_percentages
+  .height{row}
+    height (row)%
+
 .hide_display
   display none
 
 .inline
   display inline-block
+
+.margin_auto
+  margin auto auto
 
 .margin_small
   margin margin_small
@@ -203,7 +215,6 @@ img
   display table
 
 .vertical_align
-  display table-cell
   vertical-align middle
 
 .mobile
@@ -231,3 +242,7 @@ img
 
 .t_shadow_big
   text-shadow shadow_big rgba(0,0,0,0.5)
+
+for row in widths_percentages
+  .width{row}
+    width (row)%
