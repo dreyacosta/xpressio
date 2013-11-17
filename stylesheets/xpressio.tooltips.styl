@@ -8,23 +8,23 @@
   background stimulation_dark
   border-radius(4px)
   color white
-  left 10%
-  right 10%
-  top -45px
+  left 50%
+  transform(translateX(-50%) translateY(-50%))
   opacity 0
   padding 10px
   position absolute
+  top -80%
   transition(all 0.3s ease-in-out)
 
 .tooltip span:before,
 .tooltip span:after
   content ''
   position absolute
-  bottom -10px
+  top 100%
   left 50%
-  margin-left -9px
   width 0
   height 0
+  transform(translateX(-50%) translateY(-50%))
   border-left 20px solid transparent
   border-right 20px solid transparent
   border-top 20px solid stimulation_dark
