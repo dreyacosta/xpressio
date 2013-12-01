@@ -96,15 +96,21 @@ if columns_numbers
 .desktop
   display inherit !important
 
-.show_display
-  display inherit !important
+.dropdown
+  position relative
+  &>.menu
+    position absolute
+    top 100%
 
 for row in heights_percentages
   .height{row}
     height (row)%
 
-.hide_display
+.hidden
   display none
+
+.visible
+  display inherit
 
 .inline
   display inline-block
@@ -217,6 +223,9 @@ for row in heights_percentages
 .vertical_align
   vertical-align middle
 
+.o_hidden
+  overflow hidden
+
 .mobile
   display none !important
 
@@ -243,6 +252,7 @@ for row in heights_percentages
 .t_shadow_big
   text-shadow shadow_big rgba(0,0,0,0.5)
 
-for row in widths_percentages
-  .width{row}
-    width (row)%
+if widths_percentages
+  for row in widths_percentages
+    .width{row}
+      width ((row/1.008466))%

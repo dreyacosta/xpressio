@@ -27,7 +27,17 @@
 
   .tablet
     display inherit !important
-  
+
+  if columns_numbers
+    for row in columns_numbers
+      .columns{row}
+        vendor('columns', 1)
+
+  if widths_percentages
+    for row in widths_percentages
+      .width{row}
+        width 100%
+
 @media handheld, only screen and (max-width: 480px)
   .desktop
     display none !important
