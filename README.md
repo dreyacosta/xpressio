@@ -10,6 +10,14 @@ Just a small and fast tool to design your website.
 
 ### Version 0.3
 
++ Flexbox improvements.
++ Added tooltips.
++ Added modals.
++ Improve repetitive classes with loops (by [cybermarkus1](https://github.com/cybermarkus1)) 
++ New columns classes (by [cybermarkus1](https://github.com/cybermarkus1)).
+
+### Version 0.3
+
 + Flexbox cross-browser solution.
 + New flat buttons design.
 + New defaults colors.
