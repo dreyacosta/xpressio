@@ -13,6 +13,18 @@
 
   xpressio.VERSION = '0.3.5';
 
+  document.addEventListener('click', function(e) {
+    e.stopPropagation();
+
+    var dropdowns = document.querySelectorAll('.dropdown .menu');
+
+    for (var i = 0; i < dropdowns.length; i++) {
+      var dropdown = dropdowns[i];
+
+      dropdown.classList.remove('visible');
+    }
+  });
+
   var modals = xpressio.modals = function() {
     var modalsAll = document.querySelectorAll('[data-modal]');
 
@@ -48,7 +60,23 @@
     }
   }
 
+  var dropdown = xpressio.dropdown = function() {
+    var dropdowns = document.querySelectorAll('.dropdown');
+
+    var openMenu = function(e) {
+      e.stopPropagation();
+      this.querySelector('.menu').classList.toggle('visible');
+    }
+
+    for (var i = 0; i < dropdowns.length; i++) {
+      var dropdown = dropdowns[i];
+
+      dropdown.addEventListener('click', openMenu);
+    }
+  }
+
   modals();
+  dropdown();
 
   return xpressio;
 }).call(this);
