@@ -1,58 +1,33 @@
 _gridsystemWidth = (column_width + gutter_width) * columns
 
 clearfix()
-    *zoom:1
-    &:before,
-    &:after
-        content ""
-        display table
-    &:after
-        clear both
+  *zoom:1
+  &:before,
+  &:after
+    content ""
+    display table
+  &:after
+    clear both
 
 row(columns = columns)
-    display block
-    width total_width * ((gutter_width + _gridsystemWidth ) / _gridsystemWidth)
-    margin 0 total_width * (((gutter_width * 0.5) / _gridsystemWidth ) * - 1)
+  display block
+  width total_width * ((gutter_width + _gridsystemWidth ) / _gridsystemWidth)
+  margin 0 total_width * (((gutter_width * 0.5) / _gridsystemWidth ) * - 1)
 
 column(x, columns = columns)
-    width total_width * ((((gutter_width + column_width ) * x) - gutter_width) / _gridsystemWidth)
+  width total_width * ((((gutter_width + column_width ) * x) - gutter_width) / _gridsystemWidth)
 
 offset(offset = 1)
 
 .row
-    width 100%
-    clearfix()
+  width 100%
+  clearfix()
 
 [class^="col"]
-    display inline
-    float left
-    margin 0 total_width * ((gutter_width * 0.5) / _gridsystemWidth)
+  display inline
+  float left
+  margin 0 total_width * ((gutter_width * 0.5) / _gridsystemWidth)
 
-
-.margin_auto
-  margin auto auto
-
-col()
-  for row in arguments
-    .col{row}
-      column(row)
-
-widths()
-  for row in arguments
-    .width{row}
-      width (row)%
-
-heights()
-  for row in arguments
-    .height{row}
-      height (row)%
-
-number_columns()
-  for row in arguments
-    .columns{row}
-      _columns(row)
-
-col(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16)
-widths(10 20 30 40 50 60 70 80 90 100)
-heights(10 20 30 40 50 60 70 80 90 100)
-number_columns(1 2 3 4 5 6 7 8)
+for row in numbers_columns
+  .col{row}
+    column(row)
