@@ -930,6 +930,12 @@ ul.circle ul {
 .bck.b_puppy_medium {
   background: #fff3d9;
 }
+.bck.b_opacity_dark {
+  background: rgba(0,0,0,0.5);
+}
+.bck.b_opacity_light {
+  background: rgba(238,238,238,0.5);
+}
 .bck.b_mysauce1 {
   background: #abcdcf;
 }
