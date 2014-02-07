@@ -32,8 +32,6 @@
       var element = event.currentTarget;
       var modalId = element.getAttribute('data-modal');
 
-      console.log(modalId);
-
       var thisModal = document.getElementById(modalId);
       var overlay = document.querySelector('.modal-overlay');
 
@@ -78,8 +76,10 @@
     }
   };
 
-  modals();
-  dropdown();
-
   return xpressio;
 }).call(this);
+
+document.addEventListener('DOMContentLoaded', function() {
+  xpressio.modals();
+  xpressio.dropdown();
+});
