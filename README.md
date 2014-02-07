@@ -8,22 +8,27 @@ Just a small and fast tool to design your website.
 
 ## Changelog
 
-### Version 0.3
+### Version 0.3.5
 
 + Flexbox improvements.
 + Added tooltips.
 + Added modals.
-+ Improve repetitive classes with loops (by [cybermarkus1](https://github.com/cybermarkus1)) 
++ Added dropdowns.
++ New inputs checkbox and radio.
++ Grid system by percentages.
++ Text size small, normal, large and big.
++ Markup demo for Navigation menus.
++ Improve repetitive classes with loops (by [cybermarkus1](https://github.com/cybermarkus1))
 + New columns classes (by [cybermarkus1](https://github.com/cybermarkus1)).
 
-### Version 0.3
+### Version 0.3.0
 
 + Flexbox cross-browser solution.
 + New flat buttons design.
 + New defaults colors.
 + Others minor fixes.
 
-### Version 0.2
+### Version 0.2.0
 
 + File structure updated with new files: __variables.styl, xpressio.styl, xpressio.list.styl and xpressio.colors.styl
 + Reordered variables and classes.
