@@ -35,6 +35,7 @@ module.exports = function(grunt) {
               '*.html',
               '*.ico',
               'stylesheets/*.css',
+              'javascripts/*.js',
               'font/*'
             ],
             dest: 'www/'
