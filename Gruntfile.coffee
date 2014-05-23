@@ -30,8 +30,11 @@ module.exports = (grunt) ->
 
     stylus:
       theme_default:
-        options: compress: true
-        files: 'build/xpressio.theme.default.css' : 'source/stylesheets/xpressio.styl'
+        options: compress: true, import: ['__variables']
+        files: 'build/xpressio.theme.default.css' : 'source/themes/default/xpressio.theme.*.styl'
+      theme_velox:
+        options: compress: true, import: ['__variables']
+        files: 'build/xpressio.theme.velox.css' : 'source/themes/velox/xpressio.theme.*.styl'
 
     watch:
       jshint:
@@ -42,7 +45,7 @@ module.exports = (grunt) ->
         tasks: ['jshint']
 
       stylus:
-        files: ['stylesheets/*.styl']
+        files: ['source/**/*.styl']
         tasks: ['stylus']
 
     grunt.loadNpmTasks 'grunt-contrib-jshint'
