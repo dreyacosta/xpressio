@@ -1,4 +1,4 @@
-.text.color
+.color
   if include_basic_colors
     &.black
       color black
@@ -52,10 +52,12 @@
       background violet
     &.white
       background white
+    &.transparent
+      background transparent
   if include_opacity_backgrounds
-    &.opacity_dark
+    &.opacity.dark
       background opacity_dark
-    &.opacity_light
+    &.opacity.light
       background opacity_light
   if include_mycolors
     &.theme.main
