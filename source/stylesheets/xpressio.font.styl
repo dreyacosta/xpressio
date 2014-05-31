@@ -64,8 +64,12 @@ p, dl
 p:last-child
   margin-bottom 0
 
-pre
+pre, code
+  background precode_background
+  font-family precode_font_family
+  line-height precode_lineheight
   margin paragraph_margin
+  padding precode_padding
 
 pre:last-child
   margin-bottom 0
@@ -102,12 +106,8 @@ small
     text-transform uppercase
   &.right
     text-align right
-  &.shadow_small
-    text-shadow shadow_small rgba(0,0,0,0.5)
-  &.shadow_medium
-    text-shadow shadow_medium rgba(0,0,0,0.5)
-  &.shadow_big
-    text-shadow shadow_big rgba(0,0,0,0.5)
+  &.shadow
+    text-shadow shadow rgba(0,0,0,0.5)
 
 .logo
   font-size logo_font_size
