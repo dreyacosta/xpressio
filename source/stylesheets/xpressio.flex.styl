@@ -1,12 +1,16 @@
 .flex
   flexbox(flex)
   overflow hidden
+  &.auto > *
+    flex-anchor(1)
   &.inline
     flexbox(inline-flex)
   &.row
     flex-direction(row)
   &.column
     flex-direction(column)
+    &.auto > *
+      flex-anchor(1)
   &.wrap
     flex-wrap(wrap)
   &.nowrap
@@ -37,29 +41,29 @@
     flex-align-self(center)
   & > .item_stretch
     flex-align-self(stretch)
-  & > .anchor1
+  & > .x1
     flex-anchor(1)
-  & > .anchor2
+  & > .x2
     flex-anchor(2)
-  & > .anchor3
+  & > .x3
     flex-anchor(3)
-  & > .anchor4
+  & > .x4
     flex-anchor(4)
-  & > .anchor5
+  & > .x5
     flex-anchor(5)
-  & > .anchor6
+  & > .x6
     flex-anchor(6)
-  & > .anchor7
+  & > .x7
     flex-anchor(7)
-  & > .anchor8
+  & > .x8
     flex-anchor(8)
-  & > .anchor9
+  & > .x9
     flex-anchor(9)
-  & > .anchor10
+  & > .x10
     flex-anchor(10)
-  & > .anchor11
+  & > .x11
     flex-anchor(11)
-  & > .anchor12
+  & > .x12
     flex-anchor(12)
   & > .order1
     flex-order(1)
@@ -67,3 +71,7 @@
     flex-order(2)
   & > .order3
     flex-order(3)
+  & > .order4
+    flex-order(4)
+  & > .order5
+    flex-order(5)
