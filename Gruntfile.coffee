@@ -1,8 +1,5 @@
 module.exports = (grunt) ->
   grunt.initConfig
-    coffee:
-      compile: files: 'build/reactive.js' : 'source/reactive.coffee'
-
     jshint:
       options:
         boss: true
@@ -52,4 +49,4 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-stylus'
     grunt.loadNpmTasks 'grunt-contrib-watch'
 
-    grunt.registerTask 'default', []
+    grunt.registerTask 'default', ['stylus']
