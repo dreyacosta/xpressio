@@ -11,7 +11,7 @@
     xpressio = root.xpressio = {};
   }
 
-  xpressio.VERSION = '0.3.5';
+  xpressio.VERSION = '0.4.0';
 
   document.addEventListener('click', function(e) {
     e.stopPropagation();
