@@ -1,10 +1,7 @@
 # xpressio
----------------
 Just a small and fast tool to design your website.
 
-
 ## Getting started
----------------
 
 ### Grid system
 ```html
