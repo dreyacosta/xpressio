@@ -16,7 +16,7 @@ blockquote
   font-size blockquote_font_size
   padding blockquote_padding
   line-height paragraph_line_height
-  margin paragraph_margin
+  margin-bottom paragraph_bottom
 
 blockquote:last-child
   margin-bottom 0
@@ -25,27 +25,27 @@ h1, h2, h3, h4, h5, h6
   color heading_text_color
   font-family heading_font_family
   font-weight heading_font_weight
-  margin heading_margin
+  margin-bottom heading_bottom
   letter-spacing header_letter_spacing
   line-height heading_line_height
 
 h1
-  font-size 2.5rem
+  font-size base_unit * 2.5
 
 h2
-  font-size 2.2rem
+  font-size base_unit * 2.2
 
 h3
-  font-size 2rem
+  font-size base_unit * 2
 
 h4
-  font-size 1.5rem
+  font-size base_unit * 1.5
 
 h5
-  font-size 1.2rem
+  font-size base_unit * 1.2
 
 h6
-  font-size 1rem
+  font-size base_unit * 1
 
 h1:last-child,
 h2:last-child,
@@ -59,7 +59,7 @@ p, dl
   font-size paragraph_font_size
   letter-spacing paragraph_letter_spacing
   line-height paragraph_line_height
-  margin paragraph_margin
+  margin-bottom paragraph_bottom
 
 p:last-child
   margin-bottom 0
@@ -68,7 +68,7 @@ pre, code
   background precode_background
   font-family precode_font_family
   line-height precode_lineheight
-  margin paragraph_margin
+  margin-bottom paragraph_bottom
   padding precode_padding
 
 pre:last-child
