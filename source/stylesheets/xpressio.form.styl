@@ -36,7 +36,7 @@ input[type="password"],
 input[type="email"],
 input[type="date"],
 input[type="search"],
-select
+.select
   height 38px
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -64,18 +64,29 @@ fieldset span
   vertical-align middle
 
 select
+  background transparent
   border-radius(0)
+  border 0
+  margin 0
+  position absolute
+  top 50%
+  transform(translateY(-50%))
+  -moz-appearance treeitem
 
 .select
+  border-color rgba(0, 0, 0, 0.15)
+  border-style solid
+  border-width 1px
   position relative
 
 .select:after
   color rgba(0,0,0,0.2)
   content "▼"
-  top 12%
   right 3%
   pointer-events none
   position absolute
+  top 50%
+  transform(translateY(-50%))
 
 button, .btn
   cursor pointer
