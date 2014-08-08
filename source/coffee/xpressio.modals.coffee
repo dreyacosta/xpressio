@@ -1,30 +1,20 @@
-'use strict'
+class Modals
+  constructor: ->
+    unless @ instanceof Modals
+      return new Modals()
+    @overlay = document.querySelector '.modal-overlay'
+    modals   = document.querySelectorAll '[data-toggle="modal"]'
+    modal.addEventListener 'click', @openModal for modal in modals
+    @overlay.addEventListener 'click', @closeModal
 
-modals = ->
-  modalsAll = document.querySelectorAll '[data-toggle="modal"]'
+  closeModal: =>
+    @modalTarget.classList.remove 'modal-show'
+    @overlay.classList.remove 'modal-show'
 
-  closeModal = ->
-    modalsAllId = document.querySelectorAll '.modal'
-    overlay     = document.querySelector '.modal-overlay'
+  openModal: (event) =>
+    modalTargetId = event.currentTarget.dataset.target
+    @modalTarget  = document.getElementById modalTargetId
+    @overlay.classList.add 'modal-show'
+    @modalTarget.classList.add 'modal-show'
 
-    modal.classList.remove 'modal-show' for modal in modalsAllId
-
-    overlay.classList.remove 'modal-show'
-
-  openModal = (event) ->
-    element = event.currentTarget
-    modalId = element.getAttribute 'data-target'
-
-    thisModal = document.getElementById modalId
-    overlay   = document.querySelector '.modal-overlay'
-
-    overlay.addEventListener 'click', closeModal
-
-    overlay.classList.add 'modal-show'
-    thisModal.classList.add 'modal-show'
-
-  modal.addEventListener 'click', openModal for modal in modalsAll
-
-  return
-
-module.exports = modals
+module.exports = Modals
