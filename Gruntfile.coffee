@@ -1,30 +1,5 @@
 module.exports = (grunt) ->
   grunt.initConfig
-    jshint:
-      options:
-        boss: true
-        curly: true
-        eqeqeq: true
-        eqnull: true
-        immed: true
-        indent: 2
-        latedef: true
-        laxcomma: true
-        newcap: true
-        noarg: true
-        node: true
-        sub: true
-        undef: true
-        globals:
-          window: true
-          document: true
-          define: true
-        ignores: ['assets/javascript/templates/**']
-      all: [
-        'Gruntfile.js'
-        'javascripts/*.js'
-      ]
-
     stylus:
       theme_default:
         options: compress: true, import: ['__variables']
@@ -33,20 +8,25 @@ module.exports = (grunt) ->
         options: compress: true, import: ['__variables']
         files: 'build/xpressio.theme.velox.css' : 'source/themes/velox/xpressio.theme.*.styl'
 
+    browserify:
+      dist:
+        files: 'build/xpressio.js' : ['source/coffee/xpressio.coffee']
+      options:
+        transform: ['coffeeify']
+
     watch:
-      jshint:
+      coffee:
         files: [
-          'Gruntfile.js',
-          'javascripts/*.js'
+          'source/coffee/*.coffee'
         ]
-        tasks: ['jshint']
+        tasks: ['browserify']
 
       stylus:
         files: ['source/**/*.styl']
         tasks: ['stylus']
 
-    grunt.loadNpmTasks 'grunt-contrib-jshint'
     grunt.loadNpmTasks 'grunt-contrib-stylus'
     grunt.loadNpmTasks 'grunt-contrib-watch'
+    grunt.loadNpmTasks 'grunt-browserify'
 
-    grunt.registerTask 'default', ['stylus']
+    grunt.registerTask 'default', ['stylus', 'browserify']
