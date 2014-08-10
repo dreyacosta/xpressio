@@ -1,8 +1,9 @@
-xpressio = {}
+'use strict'
 
-if typeof module isnt 'undefined'
-  if module.exports
-    exports = module.exports = xpressio
-  exports.xpressio = xpressio
+xpressio = {}
+xpressio.VERSION = '0.4.0'
+
+xpressio.dropdowns = require './xpressio.dropdowns.coffee'
+xpressio.modals    = require './xpressio.modals.coffee'
 
 window.xpressio = xpressio if typeof window isnt 'undefined'
