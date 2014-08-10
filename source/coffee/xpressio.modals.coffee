@@ -1,3 +1,5 @@
+'use strict'
+
 class Modals
   constructor: ->
     unless @ instanceof Modals
