@@ -131,7 +131,9 @@ Just a small and fast tool to design your website.
 
 ## Build your theme
 1. Create your folder theme into `source/themes/themename`
+
 2. Add your `__variables.styl` file with the following lines
+
   ```stylus
   // IMPORTANT: import core variables on the top of this file
   @import '../../stylesheets/__variables.styl'
@@ -143,13 +145,17 @@ Just a small and fast tool to design your website.
   // IMPORTANT: import xpressio core on the bottom of this file
   @import '../../stylesheets/xpressio.styl'
   ```
+
 3. Add your `xpressio.theme.default.styl` file
+
   ```stylus
   // All your stuff here
   // You can also add more files with the following names
   // xpressio.theme.*.styl
   ```
+
 4. Add Grunt task
+
   ```coffeescript
   stylus:
     theme_name:
