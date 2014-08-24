@@ -1,0 +1,137 @@
+header
+  h1
+    font-weight 700
+    margin-bottom 0
+  p
+    font-size base_unit
+
+article h1
+  font-size base_unit * 3.4
+
+img
+  display block
+  margin 0 auto
+
+pre
+  padding 1.5rem !important
+
+pre, code
+  background rgb(240, 240, 240) !important
+
+.blog-logo
+  max-width 120px
+
+.blog-title
+  font-size 2.5em
+  font-family 'Raleway'
+  font-weight 700
+  margin-bottom 0
+
+.blog-description
+  font-size base_unit
+  max-width 480px
+  margin 0 auto
+
+.cover
+  background-size cover
+  background-position center
+
+.cover-mask
+  background rgba(0, 0, 0, 0.3)
+  color white
+  img
+    border 3px solid rgba(255, 255, 255, 0.7)
+
+.no-cover img
+  border 3px solid rgba(77, 77, 77, 0.9)
+
+.post-header
+  margin-bottom paragraph_bottom
+  line-height 1.4em
+  time
+    font-family 'Raleway'
+    color rgb(150, 150, 150)
+
+.post
+  img
+    display block
+    margin 0 auto
+
+.excerpt
+  h4
+    margin-bottom 6px
+
+.author
+  color #969696
+  font-family 'Raleway'
+  font-weight 300
+  min-height 40px
+  margin-top 10px
+  a
+    font-weight bold
+  img
+    max-width 40px
+  time
+    display block
+  .author-thumb
+    margin-right 6px
+
+.author-post
+  font-family 'Raleway'
+  font-weight 300
+  min-height 70px
+  img
+    max-width 70px
+  a
+    font-weight bold
+  .author-thumb
+    margin-right 12px
+
+.author-meta
+  p
+    margin-bottom 0
+
+.text
+  .raleway
+    font-family 'Raleway'
+
+.pagination
+  @extend .text.center
+  @extend .padding
+
+.site-footer
+  background rgb(248, 248, 248)
+  font-family 'Raleway'
+  font-weight 300
+
+.video-container
+  position relative
+  padding-bottom: 56.25%;
+  iframe
+    position absolute
+    width 100%
+    height 100%
+
+@media handheld, only screen and (max-width: 773px)
+  .inline
+    display inline-block
+
+@media handheld, only screen and (max-width: 480px)
+  html
+    font-size 14px
+
+  .author-thumb
+    display none
+
+  .blog-logo
+    max-width 80px
+
+  .main-header
+    h1
+      font-size 1.8em
+
+  article
+    h1
+      font-size 2em
+    h3
+      font-size 1.6em
