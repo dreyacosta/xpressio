@@ -132,27 +132,31 @@ Just a small and fast tool to design your website.
 ## Build your theme
 1. Create your folder theme into `source/themes/themename`
 2. Add your `__variables.styl` file with the following lines
-```
-// IMPORTANT: import core variables on the top of this file
-@import '../../stylesheets/__variables.styl'
-// Rewrite the core variables to customize your theme
-// IMPORTANT: import xpressio core on the bottom of this file
-@import '../../stylesheets/xpressio.styl'
-```
+  ```stylus
+  // IMPORTANT: import core variables on the top of this file
+  @import '../../stylesheets/__variables.styl'
+
+  // Rewrite the core variables to customize your theme
+  xpressio_grid = false
+  theme_main = #3C9ABD
+
+  // IMPORTANT: import xpressio core on the bottom of this file
+  @import '../../stylesheets/xpressio.styl'
+  ```
 3. Add your `xpressio.theme.default.styl` file
-```
-// All your stuff here
-// You can also add more files with the following names
-// xpressio.theme.*.styl
-```
+  ```stylus
+  // All your stuff here
+  // You can also add more files with the following names
+  // xpressio.theme.*.styl
+  ```
 4. Add Grunt task
-```coffeescript
-stylus:
-  theme_name:
-    options: compress: true, import: ['__variables']
-    files: 'build/xpressio.theme.themename.css' : 'source/themes/themename/xpressio.theme.*.styl'
-grunt.loadNpmTasks 'grunt-contrib-stylus'
-```
+  ```coffeescript
+  stylus:
+    theme_name:
+      options: compress: true, import: ['__variables']
+      files: 'build/xpressio.theme.themename.css' : 'source/themes/themename/xpressio.theme.*.styl'
+  grunt.loadNpmTasks 'grunt-contrib-stylus'
+  ```
 
 ## Credits
 Created by [David Rey](http://twitter.com/dreyacosta).
