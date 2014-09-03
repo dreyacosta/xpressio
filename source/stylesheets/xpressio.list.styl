@@ -1,14 +1,14 @@
 ul, ol
-  font-size base_unit
+  font-size paragraph_font_size
   line-height paragraph_line_height
-  margin-left base_unit
+  margin-left base_unit * 1.5
+  margin-bottom paragraph_bottom
   ul, ol
-    font-size base_unit rem
+    font-size paragraph_font_size rem
     margin-left base_unit * 2
+    margin-bottom 0
   li
-    margin-bottom paragraph_bottom
   ul:last-child, ol:last-child
-    margin-top 25px
     margin-left base_unit * 2
   &.square, &.square ul
     list-style square
