@@ -2,11 +2,15 @@
   "name": "xpressio",
   "version": "0.4.0",
   "devDependencies": {
+    "browserify": "^5.11.0",
+    "coffeeify": "^0.7.0",
     "grunt": "*",
     "grunt-browserify": "^2.1.4",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-stylus": "~0.5.0",
-    "grunt-contrib-watch": "~0.3.1"
+    "grunt-contrib-watch": "~0.3.1",
+    "gulp": "^3.8.7",
+    "vinyl-source-stream": "^0.1.1"
   },
   "dependencies": {
     "coffee-script": "^1.7.1",
