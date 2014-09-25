@@ -91,20 +91,25 @@ select
 button, .btn
   cursor pointer
   display inline-block
-  padding 0.2em 1.2em
-  transition(box-shadow 400ms)
+  font-weight font_base_weight
+  padding-top .6rem
+  padding-bottom .6rem
+  padding-left 1.8rem
+  padding-right 1.8rem
+  transition(400ms linear all)
+  vertical-align middle
   &.large
-    font-size 1.3em
-    padding 1em 1.2em
+    font-size 1.2rem
+    padding-top 1rem
+    padding-bottom 1rem
   &.medium
-    font-size 1.2em
-    padding 0.6em 1.2em
-  &.normal
-    font-size 1em
-    padding 0.4em 1.2em
-  &.anchor
-    display block
-    width 100%
+    font-size 1.1rem
+    padding-top .8rem
+    padding-bottom .8rem
+  &.small
+    font-size .9rem
+    padding-top .4rem
+    padding-bottom .4rem
 
 button:hover, .btn:hover
   box-shadow inset 0 0px 100px 0px rgba(0,0,0,0.2)
