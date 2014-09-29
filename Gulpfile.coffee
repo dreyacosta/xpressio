@@ -8,6 +8,9 @@ source     = require "vinyl-source-stream"
 
 
 source =
+  core: [
+    'source/stylesheets/*.styl'
+  ]
   default: [
     'source/themes/default/__variables.styl'
     'source/themes/default/xpressio.theme.*.styl'
@@ -36,3 +39,8 @@ gulp.task "browserify", ->
   bundler.bundle()
     .pipe source "xpressio.js"
     .pipe gulp.dest "./build"
+
+
+gulp.task "default", ->
+  gulp.watch source.core, ['stylus']
+  gulp.watch source.default, ['stylus']
