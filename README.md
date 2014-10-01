@@ -154,14 +154,24 @@ Just a small and fast tool to design your website.
   // xpressio.theme.*.styl
   ```
 
-4. Add Grunt task
+4. Add Gulp task
 
   ```coffeescript
-  stylus:
-    theme_name:
-      options: compress: true, import: ['__variables']
-      files: 'build/xpressio.theme.themename.css' : 'source/themes/themename/xpressio.theme.*.styl'
-  grunt.loadNpmTasks 'grunt-contrib-stylus'
+  stylus = require "gulp-stylus"
+
+  source =
+    theme: [
+      'source/themes/themename/__variables.styl'
+      'source/themes/themename/xpressio.theme.*.styl'
+    ]
+
+  gulp.task "stylus", ->
+    gulp.src source.theme
+      .pipe concat 'xpressio.theme.themename.styl'
+      .pipe stylus
+        compress: true
+        errors: true
+      .pipe gulp.dest('build/')
   ```
 
 ## Credits
