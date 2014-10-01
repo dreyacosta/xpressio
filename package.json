@@ -1,6 +1,6 @@
 {
   "name": "xpressio",
-  "version": "0.4.0",
+  "version": "0.4.5",
   "devDependencies": {
     "browserify": "^5.11.0",
     "coffeeify": "^0.7.0",
