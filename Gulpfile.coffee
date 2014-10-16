@@ -17,6 +17,7 @@ source =
   ]
   velox: [
     'source/themes/velox/__variables.styl'
+    'source/themes/velox/xpressio.theme.landing.styl'
     'source/themes/velox/xpressio.theme.default.styl'
     'source/themes/velox/xpressio.theme.prism.styl'
   ]
