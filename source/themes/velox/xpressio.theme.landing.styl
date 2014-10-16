@@ -1,0 +1,30 @@
+.landing
+  background-size cover
+  background-position center
+  background-attachment fixed
+  transform(translateX(0))
+  height 100%
+  @extend .relative
+  header
+    background rgba(0, 0, 0, 0.6)
+    height 100%
+    .cover, .no-cover
+      color white
+      @extend .align.vertical
+      @extend .fluid
+      &.border
+        border-color transparent
+  .site_width
+    max-width 100%
+  .scroll-down
+    @extend .absolute
+    @extend .fluid
+    bottom 0
+    color #969696
+    font-family 'Raleway'
+    padding 1rem
+    &.border
+      border-color rgba(39, 39, 39, 1)
+
+.articles-wrapper
+  margin 3rem 0
