@@ -18,6 +18,9 @@ pre
 pre, code
   background rgb(240, 240, 240) !important
 
+cite
+  font-weight 600
+
 .blog-logo-extra-border
   border 3px solid rgba(0,0,0,0.1)
 
@@ -35,6 +38,25 @@ pre, code
   max-width 480px
   margin 0 auto
 
+.blog-info
+  font-family 'Raleway'
+  .author
+  .title
+    position absolute
+    top 8px
+  .author
+    color white
+    margin 0
+    left 26px
+    a
+      font-weight 100
+    img
+      border 0
+      margin-right 10px
+      width 30px
+  .title
+    right 26px
+
 .cover
   background-size cover
   background-position center
@@ -49,11 +71,21 @@ pre, code
   border 2px solid rgba(255, 255, 255, 0.6)
 
 .post-header
+.post-cover
   margin-bottom paragraph_bottom
   line-height 1.4em
   time
     font-family 'Raleway'
     color rgb(150, 150, 150)
+
+.post-cover
+  margin-bottom 0
+  padding-top 250px
+  h1
+    font-size 3.4rem
+  time
+    background rgba(0, 0, 0, 0.5)
+    color #D3D3D3
 
 .post
   img
@@ -142,6 +174,7 @@ pre, code
       font-size 1.8em
 
   article
+  .post-cover
     h1
       font-size 2em
     h3
