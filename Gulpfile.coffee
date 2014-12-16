@@ -1,10 +1,11 @@
 "use strict"
 
-browserify = require "browserify"
-gulp       = require "gulp"
-stylus     = require "gulp-stylus"
-concat     = require "gulp-concat"
-source     = require "vinyl-source-stream"
+browserify   = require "browserify"
+gulp         = require "gulp"
+stylus       = require "gulp-stylus"
+concat       = require "gulp-concat"
+sourceStream = require "vinyl-source-stream"
+buffer       = require "vinyl-buffer"
 
 
 source =
@@ -50,7 +51,8 @@ gulp.task "browserify", ->
   bundler.transform "coffeeify"
 
   bundler.bundle()
-    .pipe source "xpressio.js"
+    .pipe sourceStream "xpressio.js"
+    .pipe buffer()
     .pipe gulp.dest "./build"
 
 
