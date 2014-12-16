@@ -1,7 +1,7 @@
 'use strict'
 
 xpressio = {}
-xpressio.VERSION = '0.4.5'
+xpressio.VERSION = '0.4.6'
 
 xpressio.dropdowns = require './xpressio.dropdowns.coffee'
 xpressio.modals    = require './xpressio.modals.coffee'
