@@ -9,11 +9,6 @@ clearfix()
   &:after
     clear both
 
-row(columns = columns)
-  display block
-  width total_width * ((gutter_width + _gridsystemWidth ) / _gridsystemWidth)
-  margin 0 total_width * (((gutter_width * 0.5) / _gridsystemWidth ) * - 1)
-
 column(x, columns = columns)
   width total_width * ((((gutter_width + column_width ) * x) - gutter_width) / _gridsystemWidth)
 
